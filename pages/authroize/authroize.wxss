@@ -1,0 +1,5 @@
+/* pages/authroize/authroize.wxss */
+page-header{
+  width:50%;
+  height: 14vh;
+}

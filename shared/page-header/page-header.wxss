@@ -1,0 +1,7 @@
+/* shared/page-header/page-header.wxss */
+
+img{
+  height: 14vh;
+  width: 44vh;
+  display: block;
+}

@@ -1,0 +1,7 @@
+<!--pages/authroize/authroize.wxml-->
+<page-header></page-header>
+
+<view class="auth-action-section">
+<button>Authorize</button>
+<button>Cancel</button>
+</view>

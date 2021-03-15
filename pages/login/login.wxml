@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view>
+<!--  TODO:embed site header containing logo -->
+</view>
+
+<view class="login_form">
+
+<label>Already in?</label>
+<input placeholder="Username"  />
+<input placeholder="Password"  />
+<button>Login</button>
+
+</view>
+
+<view class="not_a_member_yet">
+<button>Join Now</button>
+</view>
+

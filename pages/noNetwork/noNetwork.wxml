@@ -1,0 +1,8 @@
+<!--pages/noNetwork/noNetwork.wxml-->
+<view>
+<image src="/img/home.png" />
+</view>
+
+<view class="no_network">
+<button>Reconnect</button>
+</view>
