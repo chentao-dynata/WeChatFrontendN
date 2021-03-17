@@ -5,8 +5,9 @@ Page({
    * Page initial data
    */
   data: {
-
+    endTime: 'hhaha'
   },
+
 
   /**
    * Lifecycle function--Called when page load
@@ -62,5 +63,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  bindMultiPickerChange: function (e) {
+    console.log('----------------公用日期时间选择器组件传回的值----------------');
+    console.log(e.detail)
   }
 })

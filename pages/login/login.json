@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "datetimepicker": "/shared/date-time-picker/date-time-picker"
+  }
 }

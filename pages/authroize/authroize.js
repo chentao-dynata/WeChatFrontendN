@@ -76,7 +76,7 @@ Page({
     console.log(app.globalData)
     //navigate to login page?
     wx.navigateTo({
-      url: '/pages/noNetwork/noNetwork?url=/pages/login/login'
+      url: '/pages/noNetwork/noNetwork?url='+encodeURI('/pages/login/login')
     })
   }
 })

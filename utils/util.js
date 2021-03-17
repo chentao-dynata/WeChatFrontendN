@@ -14,6 +14,11 @@ const formatNumber = n => {
   return n[1] ? n : `0${n}`
 }
 
+function subTen(value) {
+  return  value < 10 ? ('0' + value) : value;
+}
+
 module.exports = {
-  formatTime
+  formatTime,
+  subTen
 }

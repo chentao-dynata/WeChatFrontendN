@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
-    this.setData({url:options.url})
+    this.setData({url:decodeURI(options.url)})
   },
 
   /**
