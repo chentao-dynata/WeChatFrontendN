@@ -12,7 +12,8 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(options)
+    this.setData({url:options.url})
   },
 
   /**
@@ -62,5 +63,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  btnReconnectTap:function () {
+    console.log(this.data)
+    var t=this
+    wx.navigateTo({
+      url: t.data.url,
+    })
   }
 })

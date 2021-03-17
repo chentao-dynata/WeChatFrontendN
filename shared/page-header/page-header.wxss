@@ -1,7 +1,16 @@
 /* shared/page-header/page-header.wxss */
 
-img{
-  height: 14vh;
-  width: 44vh;
+ .page-header{
+  width: 100%;
   display: block;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  padding:15px;
+
+}
+
+.page-header image{
+  height: 10vh;
+  width: 30vh;
 }

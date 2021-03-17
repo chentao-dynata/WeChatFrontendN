@@ -1,1 +1,37 @@
 /* pages/login/login.wxss */
+
+.login_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  height: 40vh; 
+  /* margin for above line is 10? when items contained in flex container is 5, 4 spacing blank rows? */
+  width: 100%;
+}
+
+.login_form input{
+  border:1px solid grey;
+  width: 65%;
+  margin:0 auto;
+}
+.login_form button{
+  background-color: teal;
+  width: 85%;
+}
+
+
+
+.login_form .btn{
+  margin:2px auto;
+  width: 65%;
+}
+.login_form .btna{
+  background-color: teal;
+  order: 1;
+}
+.login_form .btnb{
+  background-color: red;
+  order: 1;
+}

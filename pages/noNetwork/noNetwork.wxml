@@ -4,5 +4,5 @@
 </view>
 
 <view class="no_network">
-<button>Reconnect</button>
+<button bindtap="btnReconnectTap">Reconnect</button>
 </view>

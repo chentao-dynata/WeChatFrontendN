@@ -1,5 +1,6 @@
 // shared/page-header/page-header.js
 Component({
+  
   /**
    * Component properties
    */

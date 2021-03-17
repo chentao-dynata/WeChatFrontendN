@@ -1,7 +1,13 @@
 <!--pages/authroize/authroize.wxml-->
-<page-header></page-header>
+<page-header />
+<view>
+  <image src="{{userInfo.avatarUrl}}" />
+</view>
 
-<view class="auth-action-section">
-<button>Authorize</button>
-<button>Cancel</button>
+<view class="actions">
+  <label>
+    OW requires your nickname and profile image. We do not disclose any personal information.
+  </label>
+<button style="width:65%" class="app-button-red" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Authorization</button>
+<button style="width:65%" class="app-button">Cancel</button>
 </view>
