@@ -67,5 +67,10 @@ Page({
   bindMultiPickerChange: function (e) {
     console.log('----------------公用日期时间选择器组件传回的值----------------');
     console.log(e.detail)
+    let t=this
+    
+    t.setData({
+      username:e.detail.slice(0,3).join('-')
+    })
   }
 })

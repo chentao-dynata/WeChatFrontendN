@@ -6,7 +6,7 @@
 
     <datetimepicker id="date-time-picker" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel"></datetimepicker>
 
-    <input placeholder="Username" />
+    <input placeholder="Username" value="{{username}}" />
     <input placeholder="Password" />
     <button class="btn btna">Login</button>
     <button class="btn btnb">Join Now</button>
