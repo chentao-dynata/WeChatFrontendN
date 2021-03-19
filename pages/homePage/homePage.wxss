@@ -1,0 +1,5 @@
+/* pages/homePage/homePage.wxss */
+action-sheet-item{
+  text-align:left;
+  padding-left: 10vw;
+}

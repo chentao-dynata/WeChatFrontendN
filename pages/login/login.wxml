@@ -8,8 +8,9 @@
 
     <input placeholder="Username" value="{{username}}" />
     <input placeholder="Password" />
-    <button class="btn btna">Login</button>
-    <button class="btn btnb">Join Now</button>
+    <button class="btn btna" bindtap="gotoHomePage">Login</button>
+    <label>Not a member yet?</label>
+    <button class="btn btnb" bindtap="gotojoinflow">Join Now</button>
 
   </view>
 

@@ -72,5 +72,15 @@ Page({
     t.setData({
       username:e.detail.slice(0,3).join('-')
     })
+  },
+  gotojoinflow:function () {
+    wx.navigateTo({
+      url: '/pages/joinPrePage/joinPrePage',
+    })
+  },
+  gotoHomePage:function () {
+    wx.navigateTo({
+      url: '/pages/homePage/homePage',
+    })
   }
 })

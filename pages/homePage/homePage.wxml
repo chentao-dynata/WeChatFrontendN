@@ -1,0 +1,34 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}" color-animation-duration="2000" color-animation-timing-func="easeIn" />
+</page-meta>
+
+<view>
+
+  <button bindtap="showActionSheet">alert tap menus in bottom</button>
+</view>
+
+<action-sheet hidden="{{actionsheethidden}}">
+
+  <block>
+    <action-sheet-item bindtap="bind{{menu1}}">
+      Add to Desktop
+    </action-sheet-item>
+  </block>
+  <block>
+    <action-sheet-item bindtap="bind{{menu2}}">
+      About Money Cat
+    </action-sheet-item>
+  </block>
+  <block>
+    <action-sheet-item bindtap="bind{{menu3}}">
+      Cancel
+    </action-sheet-item>
+  </block>
+
+  <!-- <action-sheet-cancel>
+    Cancel
+  </action-sheet-cancel> -->
+
+</action-sheet>
+<tabBar></tabBar>

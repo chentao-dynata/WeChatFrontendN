@@ -29,9 +29,7 @@
 }
 .login_form .btna{
   background-color: teal;
-  order: 1;
 }
 .login_form .btnb{
   background-color: red;
-  order: 1;
 }

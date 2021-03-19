@@ -1,16 +1,20 @@
 {
-  "pages":[
+  "pages": [
     "pages/authroize/authroize",
+    "pages/homePage/homePage",
+    "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",
+    "pages/joinPrePageEmail/joinPrePageEmail",
+    "pages/joinPrePage/joinPrePage",
     "pages/login/login",
     "pages/noNetwork/noNetwork"
-    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
+  
 }

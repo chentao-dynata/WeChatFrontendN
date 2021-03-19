@@ -1,0 +1,9 @@
+<!--pages/joinPrePage/joinPrePage.wxml-->
+<view>
+
+  <input type="text" placeholder="a" />
+  <input type="text" placeholder="b" />
+  <input type="text" placeholder="c" />
+  <input type="text" placeholder="d" />
+  <button bindtap="gotoJoinSendEmail">Next</button>
+</view>

@@ -1,0 +1,5 @@
+<view>
+  <input type="text" placeholder="respondent email" />
+  <button bindtap="gotoJoinVerifyCode">Next</button>
+
+</view>

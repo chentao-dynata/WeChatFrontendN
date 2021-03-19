@@ -1,0 +1,6 @@
+<view>
+
+  <input type="text" placeholder="Enter verification code" />
+  <button bindtap="gotoHomePage">Confirm</button>
+  <navigator url="/pages/joinPrePageEmail/joinPrePageEmail">Resend code</navigator>
+</view>

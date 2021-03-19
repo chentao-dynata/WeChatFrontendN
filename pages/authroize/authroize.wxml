@@ -9,5 +9,7 @@
     OW requires your nickname and profile image. We do not disclose any personal information.
   </label>
 <button style="width:65%" class="app-button-red" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Authorization</button>
-<button style="width:65%" class="app-button">Cancel</button>
+<button style="width:65%" class="app-button" bindtap="cancelAuthorize">Cancel</button>
+
+<navigator style="margin-left:7.5%;" class="app-button" open-type="exit" target="miniProgram">Cancel</navigator>
 </view>
