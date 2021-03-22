@@ -3,10 +3,26 @@
     background-color="{{nbBackgroundColor}}" color-animation-duration="2000" color-animation-timing-func="easeIn" />
 </page-meta>
 
-<view>
+<view class="self_info">
+  <view class="photo">
+    photo
+  </view>
+  <view class="info_field first">
+    <label for="">Man</label>
+    <label for="">ID:007</label>
+  </view>
+  <view class="info_field last">
+    <label for="">Points</label>
+    <label for="">100</label>
+  </view>
+</view>
+<view class="take_survey">
 
   <button bindtap="showActionSheet">alert tap menus in bottom</button>
+
 </view>
+
+
 
 <action-sheet hidden="{{actionsheethidden}}">
 
