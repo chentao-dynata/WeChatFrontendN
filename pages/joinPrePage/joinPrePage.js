@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    birthday: ''
+    birthday: 'Enter your date of birth'
   },
 
   /**

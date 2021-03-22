@@ -6,9 +6,10 @@
   </label>
 </view>
 <view class="container pre_form">
-  <datetimepicker id="date-time-picker" style="display:none;" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel">
+  <datetimepicker id="date-time-picker" innerText="{{birthday}}" bind:bindMultiPickerChange="bindMultiPickerChange"
+    bind:bindCancel="bindCancel">
   </datetimepicker>
-  <input type="text" placeholder="Enter your date of birth" bindfocus="showpicker" value="{{birthday}}" />
+  <!-- <input type="text" placeholder="Enter your date of birth" bindfocus="showpicker" value="{{birthday}}" /> -->
   <input type="text" placeholder="Enter your post code" />
   <input type="text" placeholder="Select your education" />
   <input type="text" placeholder="Select your employment status" />
