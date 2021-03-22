@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    birthday: ''
   },
 
   /**
@@ -63,9 +63,21 @@ Page({
   onShareAppMessage: function () {
 
   },
-  gotoJoinSendEmail:function () {
+  gotoJoinSendEmail: function () {
     wx.navigateTo({
       url: '/pages/joinPrePageEmail/joinPrePageEmail',
     })
+  },
+  bindMultiPickerChange: function (e) {
+    console.log('----------------公用日期时间选择器组件传回的值----------------');
+    console.log(e.detail)
+    let t = this
+
+    t.setData({
+      birthday: e.detail.slice(0, 3).join('-')
+    })
+  },
+  showpicker(e) {
+    console.log('--looking for picker--')
   }
 })

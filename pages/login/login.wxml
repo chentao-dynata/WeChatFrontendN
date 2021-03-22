@@ -1,6 +1,5 @@
 <!--pages/login/login.wxml-->
 <page-header></page-header>
-
 <view class="login_form">
   <label>Are you already an existing OpinionWOrld member?</label>
   <datetimepicker id="date-time-picker" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel">

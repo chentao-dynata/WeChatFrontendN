@@ -1,9 +1,20 @@
 <!--pages/joinPrePage/joinPrePage.wxml-->
-<view>
-
-  <input type="text" placeholder="a" />
-  <input type="text" placeholder="b" />
-  <input type="text" placeholder="c" />
-  <input type="text" placeholder="d" />
-  <button bindtap="gotoJoinSendEmail">Next</button>
+<page-header></page-header>
+<view class="caption">
+  <label class="title">Please fill in the below information.</label>
+  <label class="content">More surveys will be assigned by filling in the info below. Meaning more chance to earn points!
+  </label>
+</view>
+<view class="container pre_form">
+  <datetimepicker id="date-time-picker" style="display:none;" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel">
+  </datetimepicker>
+  <input type="text" placeholder="Enter your date of birth" bindfocus="showpicker" value="{{birthday}}" />
+  <input type="text" placeholder="Enter your post code" />
+  <input type="text" placeholder="Select your education" />
+  <input type="text" placeholder="Select your employment status" />
+  <button class="btn" bindtap="gotoJoinSendEmail">Next</button>
+  <view class="wizard">
+    <label style="background-color:white;border-radius:6px;height:12px;margin-top:6px;">_</label>
+    <label>O</label>
+  </view>
 </view>
