@@ -1,5 +1,20 @@
-<view>
-  <input type="text" placeholder="respondent email" />
-  <button bindtap="gotoJoinVerifyCode">Next</button>
+<page-header></page-header>
+<view class="caption">
+  <label class="title">Please fill in the below information.</label>
+  <label class="content">More surveys will be assigned by filling in the info below. Meaning more chance to earn points!
+  </label>
+</view>
 
+<view class="container pre_form">
+  <input type="text" placeholder="Enter your email" />
+  <view>
+    <label for="">
+      You will receive a verification code in your email
+    </label>
+    <button class="btn" bindtap="gotoJoinVerifyCode">Next</button>
+  </view>
+  <view class="wizard">
+    <label style="background-color:white;border-radius:6px;height:12px;margin-top:6px;">_</label>
+    <label>O</label>
+  </view>
 </view>

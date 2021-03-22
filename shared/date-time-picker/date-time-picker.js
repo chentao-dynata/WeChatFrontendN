@@ -6,7 +6,7 @@ Component({
     properties: {
         innerText: {
             type: String,
-            value: 'default value',
+            value: '',
           }
     },
     data: {
