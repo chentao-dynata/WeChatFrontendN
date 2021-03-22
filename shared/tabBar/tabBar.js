@@ -11,13 +11,13 @@ Component({
   data: {
     tabBar: [
       {
-        "pagePath": "../../pages/index/index",
+        "pagePath": "/pages/authroize/authroize",
         "text": "首页",
         "iconPath": "../../images/index_icon.png" // 因为子页面点击图标的不需要变化，因为直接跳转到首页了
       },
       {
-        "pagePath": "../../pages/user/user",
-        "text": "我的",
+        "pagePath": "/pages/joinPrePage/joinPrePage",
+        "text": "Join",
         "iconPath": "../../images/user_icon.png"
       }
     ]
