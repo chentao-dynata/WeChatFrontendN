@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "datetimepicker": "/shared/date-time-picker/date-time-picker",
     "page-header":"/shared/page-header/page-header"
   }
 }
