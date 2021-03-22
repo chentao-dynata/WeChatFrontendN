@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/authroize/authroize",
+    "pages/noNetwork/noNetwork",
     "pages/homePage/homePage",
     "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",
     "pages/joinPrePageEmail/joinPrePageEmail",
     "pages/joinPrePage/joinPrePage",
-    "pages/login/login",
-    "pages/noNetwork/noNetwork"
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,5 +16,4 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
-  
 }

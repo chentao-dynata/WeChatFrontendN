@@ -1,8 +1,4 @@
 <!--pages/noNetwork/noNetwork.wxml-->
-<view>
-<image src="/img/home.png" />
-</view>
-
 <view class="no_network">
-<button bindtap="btnReconnectTap">Reconnect</button>
+  <button bindtap="btnReconnectTap" class="app-button app-button-red">Reconnect</button>
 </view>

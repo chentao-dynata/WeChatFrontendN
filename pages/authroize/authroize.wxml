@@ -1,15 +1,18 @@
 <!--pages/authroize/authroize.wxml-->
-<page-header />
-<view>
-  <image src="{{userInfo.avatarUrl}}" />
-</view>
+<view class="container">
 
-<view class="actions">
-  <label>
-    OW requires your nickname and profile image. We do not disclose any personal information.
-  </label>
-<button style="width:65%" class="app-button-red" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Authorization</button>
-<button style="width:65%" class="app-button" bindtap="cancelAuthorize">Cancel</button>
+  <!-- 
+  <page-header />
+  <view>
+    <image src="{{userInfo.avatarUrl}}" />
+  </view> -->
 
-<navigator style="margin-left:7.5%;" class="app-button" open-type="exit" target="miniProgram">Cancel</navigator>
+  <view class="actions">
+    <label>
+      OW requires your nickname and profile image. We do not disclose any personal information.
+    </label>
+    <button style="width:65%" class="app-button-red" open-type="getUserInfo"
+      bindgetuserinfo="getUserInfo">Authorization</button>
+    <navigator style="margin-left:17.5%;font-weight:bold;padding-top:1vh;box-shadow:1px 1px 2px black;" class="app-button" open-type="exit" target="miniProgram">Cancel</navigator>
+  </view>
 </view>
