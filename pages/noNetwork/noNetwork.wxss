@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   box-sizing:border-box;
   background-size:100% 100%;
-  padding-top:740rpx;
+  padding-top:755rpx;
 }
 
 
@@ -14,7 +14,7 @@
   color: white;
   border-top-left-radius: 2vh;
   border-bottom-right-radius: 2vh;
-  width: 75%;
+  width: 73%;
   height: 7vh;
   vertical-align: middle;
 }

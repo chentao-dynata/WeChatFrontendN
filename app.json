@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/homePage/homePage",
     "pages/authroize/authroize",
+    "pages/homePage/homePage",
+    "pages/joinPrePage/joinPrePage",
+    "pages/noNetwork/noNetwork",
     "pages/joinPrePageEmail/joinPrePageEmail",
     "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",
-    "pages/joinPrePage/joinPrePage",
     "pages/login/login",
-    "pages/test/test",
-    "pages/noNetwork/noNetwork"
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

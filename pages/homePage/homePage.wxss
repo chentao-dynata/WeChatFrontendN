@@ -23,7 +23,13 @@ action-sheet-item{
   border-bottom-left-radius: 20vh;
   text-align: center;
   vertical-align: middle;
+  overflow: hidden;
 }
+.self_info .photo image{
+  width: 10vh;
+  height: 10vh;
+}
+
 .info_field{
   color: white;
 }

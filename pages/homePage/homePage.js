@@ -1,4 +1,5 @@
 // pages/homePage/homePage.js
+const app=getApp()
 Page({
 
   data: {
@@ -6,6 +7,7 @@ Page({
     nbBackgroundColor: '#ffffff',
   },
   onLoad() {
+    console.log(app.globalData)
     this.setData({
       nbTitle: 'HomePage',
       nbLoading: true,
@@ -14,7 +16,8 @@ Page({
       menu1: "menu1",
       menu2: "menu2",
       menu3: "menu3",
-      actionsheethidden: true
+      actionsheethidden: true,
+      photo:app.globalData.userInfo.avatarUrl
     })
   },
 

@@ -5,7 +5,7 @@
 
 <view class="self_info">
   <view class="photo">
-    photo
+    <image src="{{photo}}" />
   </view>
   <view class="info_field first">
     <label for="">Man</label>
