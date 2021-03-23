@@ -17,7 +17,7 @@ Page({
       menu2: "menu2",
       menu3: "menu3",
       actionsheethidden: true,
-      photo:app.globalData.userInfo.avatarUrl
+      photo:app.globalData.userInfo?app.globalData.userInfo.avatarUrl:''
     })
   },
 

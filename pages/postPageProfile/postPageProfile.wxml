@@ -1,0 +1,15 @@
+<!--pages/postPageProfile/postPageProfile.wxml-->
+<self-info></self-info>
+<tabBar></tabBar>
+<view class="ow_container">
+  <view class="name_mobile">
+    <label for="">Nick Name</label>
+    <label for="">Mobile Number</label>
+  </view>
+  <view class="profile_etc">
+    <label for="">01-01-2000</label>
+    <label for="">chen.tao@dynata.com</label>
+    <label for="">{{"theProvince"}}</label>
+    <label for="">{{"theCity"}}</label>
+  </view>
+</view>

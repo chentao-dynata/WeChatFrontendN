@@ -17,12 +17,18 @@
   </view>
 </view>
 <view class="take_survey">
-
-  <button bindtap="showActionSheet">alert tap menus in bottom</button>
-
+  <view class="caption">
+    <label>Do surveys earn points!</label>
+    <label class="attention">100 Point coins = 10 CNY </label>
+    <button bindtap="showActionSheet" class=".btn_normal">Take Survey</button>
+  </view>
 </view>
-
-
+<view class="dashboard">
+  <view class="entry">My Profile</view>
+  <view class="entry">Cash out</view>
+  <view class="entry" style="line-height:4vh;">Completed Surveys</view>
+  <view class="entry">FAQ</view>
+</view>
 
 <action-sheet hidden="{{actionsheethidden}}">
 

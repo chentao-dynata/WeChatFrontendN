@@ -1,4 +1,5 @@
 // shared/logged-in-header/logged-in-header.js
+const app=getApp()
 Component({
   /**
    * Component properties
@@ -11,7 +12,7 @@ Component({
    * Component initial data
    */
   data: {
-
+    photo: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : ''
   },
 
   /**

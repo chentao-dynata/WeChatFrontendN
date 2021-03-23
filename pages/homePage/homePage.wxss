@@ -39,3 +39,48 @@ action-sheet-item{
 .info_field .last{
   flex-direction:row-reverse
 }
+
+.take_survey{
+  width: 100%;
+  display: flex;
+}
+
+.take_survey .caption{
+  padding: 0 10%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.take_survey .caption button{
+  margin: 4vh 0;
+}
+
+.take_survey .caption .attention{
+  font-weight: bold;
+  font-size: 35rpx;
+}
+
+.dashboard{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(222, 222, 222);
+  padding: 0 10%;
+  flex-wrap: wrap;
+  padding-bottom: 6vh;
+}
+.dashboard .entry{
+  color: orange;
+  line-height: 10vh;
+  display: block;
+  width: 40%;
+  height: 10vh;
+  background-color: white;
+  text-align: right;
+  margin: 4vh auto;
+  border-radius: 2vh;
+  padding-right: 1vh;
+}
+.dashboard .entry::before{
+  content: "$$$";
+}

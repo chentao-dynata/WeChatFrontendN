@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/authroize/authroize",
+    "pages/postPageProfile/postPageProfile",
     "pages/homePage/homePage",
+    "pages/authroize/authroize",
     "pages/joinPrePage/joinPrePage",
     "pages/noNetwork/noNetwork",
     "pages/joinPrePageEmail/joinPrePageEmail",
