@@ -1,4 +1,7 @@
 <!--pages/authroize/authroize.wxml-->
+<page-meta>
+  <navigation-bar title="Authorize" />
+</page-meta>
 <view class="container">
 
   <!-- 

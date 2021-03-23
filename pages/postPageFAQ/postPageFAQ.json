@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "self-info":"/shared/logged-in-header/logged-in-header",
+    "tabBar": "/shared/tabBar/tabBar",
+    "subject-leader":"/shared/subject-leader/subject-leader"
+  }
+}

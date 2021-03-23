@@ -1,0 +1,9 @@
+<!--pages/postPageFAQ/postPageFAQ.wxml-->
+<page-meta>
+  <navigation-bar title="FAQ" />
+</page-meta>
+<self-info></self-info>
+<tabBar oridinal="4"></tabBar>
+<view class="ow_container">
+  <subject-leader subject="FAQ" item1="FAQ" item2="Contact Us"></subject-leader>
+</view>

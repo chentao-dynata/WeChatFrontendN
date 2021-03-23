@@ -24,3 +24,6 @@
 .section_item .section_title {
   font-size: 26rpx;
 }
+.active{
+  color: rgb(73, 148, 208);
+}

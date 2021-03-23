@@ -1,4 +1,7 @@
 <!--pages/login/login.wxml-->
+<page-meta>
+  <navigation-bar title="Login" />
+</page-meta>
 <page-header></page-header>
 <view class="login_form">
   <label>Are you already an existing OpinionWOrld member?</label>

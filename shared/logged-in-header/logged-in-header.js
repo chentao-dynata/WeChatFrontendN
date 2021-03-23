@@ -1,5 +1,5 @@
 // shared/logged-in-header/logged-in-header.js
-const app=getApp()
+const app = getApp()
 Component({
   /**
    * Component properties
@@ -11,14 +11,20 @@ Component({
   /**
    * Component initial data
    */
-  data: {
-    photo: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : ''
-  },
+  data: {},
 
   /**
    * Component methods
    */
   methods: {
 
+  },
+  lifetimes: {
+    ready() {
+      console.log(app)
+      this.setData({
+        photo: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : ''
+      })
+    }
   }
 })

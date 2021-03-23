@@ -1,4 +1,7 @@
 <!--pages/joinPrePage/joinPrePage.wxml-->
+<page-meta>
+  <navigation-bar title="Join Prepage" />
+</page-meta>
 <page-header></page-header>
 <view class="caption">
   <label class="title">Please fill in the below information.</label>

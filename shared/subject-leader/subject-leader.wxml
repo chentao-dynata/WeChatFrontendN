@@ -1,0 +1,9 @@
+<!--shared/subject-leader/subject-leader.wxml-->
+<view class="subject">
+  <text>{{subject}}</text>
+  <view class="row">
+    <navigator>{{item1}}</navigator>
+    <text>|</text>
+    <navigator>{{item2}}</navigator>
+  </view>
+</view>

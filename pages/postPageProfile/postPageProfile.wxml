@@ -1,6 +1,9 @@
 <!--pages/postPageProfile/postPageProfile.wxml-->
+<page-meta>
+  <navigation-bar title="Profile" />
+</page-meta>
 <self-info></self-info>
-<tabBar></tabBar>
+<tabBar oridinal="1"></tabBar>
 <view class="ow_container">
   <view class="name_mobile">
     <label for="">Nick Name</label>
