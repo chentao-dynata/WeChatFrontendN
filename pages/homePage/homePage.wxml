@@ -12,10 +12,10 @@
   </view>
 </view>
 <view class="dashboard">
-  <view class="profile icons entry">My Profile</view>
-  <view class="entry">Cash out</view>
-  <view class="entry" style="line-height:4vh;">Completed Surveys</view>
-  <view class="entry">FAQ</view>
+  <view class="profile icons entry" bindtap="gotoprofile"></view>
+  <view class="cashout icons entry"></view>
+  <view class="completed icons entry"></view>
+  <view class="faq icons entry"></view>
 </view>
 
 <action-sheet hidden="{{actionsheethidden}}">

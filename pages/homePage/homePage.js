@@ -95,5 +95,10 @@ Page({
     this.setData({
       actionsheethidden: true
     })
+  },
+  gotoprofile(){
+    wx.switchTab({
+      url: '/pages/postPageProfile/postPageProfile',
+    })
   }
 })

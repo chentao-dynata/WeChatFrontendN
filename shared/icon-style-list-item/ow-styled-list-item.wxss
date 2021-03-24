@@ -16,7 +16,7 @@
 .icon_row .texts {
   display: flex;
   flex-direction: column;
-  margin: 35rpx 120rpx;
+  margin: 20rpx 120rpx;
 }
 .icon_row .texts label{
   display: block;
