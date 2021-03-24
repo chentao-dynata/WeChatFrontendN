@@ -3,7 +3,6 @@
   <navigation-bar title="Profile" />
 </page-meta>
 <self-info></self-info>
-<tabBar oridinal="1"></tabBar>
 <view class="ow_container">
   <view class="name_mobile">
     <icon-row subject="Nick Name" caption="Edit your nick name"></icon-row>

@@ -79,7 +79,7 @@ Page({
     })
   },
   gotoHomePage:function () {
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/homePage/homePage',
     })
   }
