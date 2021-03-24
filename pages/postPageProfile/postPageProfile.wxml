@@ -5,14 +5,14 @@
 <self-info></self-info>
 <view class="ow_container">
   <view class="name_mobile">
-    <icon-row subject="Nick Name" caption="Edit your nick name"></icon-row>
-    <icon-row subject="Mobile Number" caption="Edit your mobile number"></icon-row>
-  
+    <icon-row iconIndex="0" subject="Nick Name" caption="Edit your nick name"></icon-row>
+    <icon-row iconIndex="1" subject="Mobile Number" caption="Edit your mobile number"></icon-row>
+
   </view>
   <view class="profile_etc">
-    <icon-row subject="01-01-2000"></icon-row>
-    <icon-row subject="chen.tao@dynata.com"></icon-row>
-    <icon-row subject="Guangdong" caption="Edit your province"></icon-row>
-    <icon-row subject="Guangzhou" caption="Edit your city"></icon-row>
+    <icon-row iconIndex="2" subject="01-01-2000"></icon-row>
+    <icon-row iconIndex="3" subject="chen.tao@dynata.com"></icon-row>
+    <icon-row iconIndex="4" subject="Guangdong" caption="Edit your province"></icon-row>
+    <icon-row iconIndex="5" subject="Guangzhou" caption="Edit your city"></icon-row>
   </view>
 </view>

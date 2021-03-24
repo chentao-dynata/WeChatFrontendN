@@ -1,7 +1,6 @@
 <!--shared/icon-style-list-item/ow-styled-list-item.wxml-->
 
-<view class="icon_row">
-  <image style="display:{{showIcon?'':'none'}}" src="{{icon}}"></image>
+<view class="icon_row {{iconsArray[iconIndex]}} icon">
   <view class="texts">
     <label>{{subject}}</label>
     <label class="small_grey">{{caption}}</label>

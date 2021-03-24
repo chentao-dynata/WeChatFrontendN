@@ -4,9 +4,9 @@ Component({
    * Component properties
    */
   properties: {
-    icon: {
-      type: String,
-      value: ''
+    iconIndex: {
+      type: Number,
+      value: -1
     },
     subject: {
       type: String,
@@ -22,7 +22,9 @@ Component({
    * Component initial data
    */
   data: {
-
+    iconsArray:[
+      "profileIcon","phoneIcon","birthIcon","emailIcon","regionIcon","cityIcon"
+    ]
   },
 
   /**
