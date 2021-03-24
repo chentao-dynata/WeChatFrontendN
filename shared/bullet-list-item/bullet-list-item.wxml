@@ -1,10 +1,10 @@
-<!--shared/icon-style-list-item/ow-styled-list-item.wxml-->
-
-<view class="icon_row">
+<view class="bullet_row">
   <image style="display:{{showIcon?'':'none'}}" src="{{icon}}"></image>
   <view class="texts">
     <label>{{subject}}</label>
     <label class="small_grey">{{caption}}</label>
   </view>
-  
+  <view class="arrow">
+    >
+  </view>
 </view>

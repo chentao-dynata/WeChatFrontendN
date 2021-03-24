@@ -1,13 +1,16 @@
 <!--shared/logged-in-header/logged-in-header.wxml-->
 
 <view class="self_info">
-  <view class="photo">
-    <image src="{{photo}}" />
+  <view class="left">
+    <view class="photo">
+      <image src="{{photo}}" />
+    </view>
+    <view class="info_field first">
+      <label for="">Man</label>
+      <label for="">ID:007</label>
+    </view>
   </view>
-  <view class="info_field first">
-    <label for="">Man</label>
-    <label for="">ID:007</label>
-  </view>
+
   <view class="info_field last">
     <label for="">Points</label>
     <label for="">100</label>

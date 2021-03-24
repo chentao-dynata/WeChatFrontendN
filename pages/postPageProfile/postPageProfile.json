@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "self-info":"/shared/logged-in-header/logged-in-header",
-    "tabBar": "/shared/tabBar/tabBar"
+    "tabBar": "/shared/tabBar/tabBar",
+    "icon-row":"/shared/icon-style-list-item/ow-styled-list-item"
   }
 }

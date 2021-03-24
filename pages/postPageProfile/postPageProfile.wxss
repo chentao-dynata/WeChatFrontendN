@@ -1,15 +1,6 @@
 /* pages/postPageProfile/postPageProfile.wxss */
 .name_mobile,.profile_etc {
-  width: 80%;
+  width: 90%;
   margin: 3vh auto;
 }
 
-.name_mobile label,
-.profile_etc label {
-  width: 70%;
-  display: block;
-  padding: 0 8vh;
-  border: 1px solid rgb(233, 237, 238);
-  line-height: 8vh;
-  box-shadow: 1 1 1 black;
-}

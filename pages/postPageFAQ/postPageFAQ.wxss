@@ -1,1 +1,5 @@
 /* pages/postPageFAQ/postPageFAQ.wxss */
+
+.general_info{
+  padding-left: 3vh;
+}

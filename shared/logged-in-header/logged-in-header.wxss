@@ -8,6 +8,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.self_info .left{
+  display:flex;
+  flex-direction: row;
+}
 
 .self_info .photo{
   background-color: grey;
@@ -27,6 +31,7 @@
 }
 
 .self_info .info_field{
+  margin:0 20rpx;
   color: white;
 }
 .self_info .info_field label{

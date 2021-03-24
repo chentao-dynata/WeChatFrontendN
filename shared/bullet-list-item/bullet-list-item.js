@@ -1,4 +1,4 @@
-// shared/icon-style-list-item/ow-styled-list-item.js
+// shared/bullet-list-item/bullet-list-item.js
 Component({
   /**
    * Component properties

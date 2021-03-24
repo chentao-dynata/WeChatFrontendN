@@ -6,13 +6,14 @@
 <tabBar oridinal="1"></tabBar>
 <view class="ow_container">
   <view class="name_mobile">
-    <label for="">Nick Name</label>
-    <label for="">Mobile Number</label>
+    <icon-row subject="Nick Name" caption="Edit your nick name"></icon-row>
+    <icon-row subject="Mobile Number" caption="Edit your mobile number"></icon-row>
+  
   </view>
   <view class="profile_etc">
-    <label for="">01-01-2000</label>
-    <label for="">chen.tao@dynata.com</label>
-    <label for="">{{"theProvince"}}</label>
-    <label for="">{{"theCity"}}</label>
+    <icon-row subject="01-01-2000"></icon-row>
+    <icon-row subject="chen.tao@dynata.com"></icon-row>
+    <icon-row subject="Guangdong" caption="Edit your province"></icon-row>
+    <icon-row subject="Guangzhou" caption="Edit your city"></icon-row>
   </view>
 </view>

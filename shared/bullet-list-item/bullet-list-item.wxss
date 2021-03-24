@@ -1,0 +1,32 @@
+/* shared/bullet-list-item/bullet-list-item.wxss */
+
+/* shared/icon-style-list-item/ow-styled-list-item.wxss */
+.bullet_row{
+  border: 1px solid rgb(233, 237, 238);
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  height: 6vh;
+  justify-content:space-between;
+  padding: 1vh 2vh 0 2vh;
+  font-size: 28rpx;
+  box-shadow: 3px 3px 2px #888888;
+}
+
+.bullet_row .texts {
+  display: flex;
+  flex-direction: column;
+}
+.bullet_row .texts label{
+  display: block;
+  line-height: 25rpx;
+}
+.bullet_row .texts label.small_grey{
+  color: grey;
+  font-size: 25rpx;
+}
+.bullet_row .arrow{
+  line-height: 4vh;
+  color: rgb(233, 237, 238);
+}

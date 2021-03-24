@@ -7,3 +7,7 @@
 <view class="ow_container">
   <subject-leader subject="FAQ" item1="FAQ" item2="Contact Us"></subject-leader>
 </view>
+<view class="ow_container general_info" style="margin:50rpx auto;">
+  <bullet-row icon="" subject="General Information" caption="How does it all work"></bullet-row>
+  
+</view>
