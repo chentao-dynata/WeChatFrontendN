@@ -12,7 +12,7 @@
   </view>
 </view>
 <view class="dashboard">
-  <view class="entry">My Profile</view>
+  <view class="profile icons entry">My Profile</view>
   <view class="entry">Cash out</view>
   <view class="entry" style="line-height:4vh;">Completed Surveys</view>
   <view class="entry">FAQ</view>
