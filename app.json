@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/homePage/homePage",
     "pages/authroize/authroize",
+    "pages/homePage/homePage",
     "pages/postPageFAQ/postPageFAQ",
     "pages/postPageProfile/postPageProfile",
     "pages/joinPrePage/joinPrePage",
