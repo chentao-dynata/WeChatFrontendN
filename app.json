@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/joinPrePage/joinPrePage",
     "pages/authroize/authroize",
     "pages/homePage/homePage",
     "pages/postPageFAQ/postPageFAQ",
     "pages/postPageProfile/postPageProfile",
-    "pages/joinPrePage/joinPrePage",
     "pages/noNetwork/noNetwork",
     "pages/joinPrePageEmail/joinPrePageEmail",
     "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",

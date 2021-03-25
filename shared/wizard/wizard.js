@@ -4,7 +4,10 @@ Component({
    * Component properties
    */
   properties: {
-
+    ringIndex:{
+      type:Number,
+      value:-1
+    }
   },
 
   /**

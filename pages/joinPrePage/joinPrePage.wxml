@@ -17,8 +17,5 @@
   <input type="text" placeholder="Select your education" />
   <input type="text" placeholder="Select your employment status" />
   <button class="btn" bindtap="gotoJoinSendEmail">Next</button>
-  <view class="wizard">
-    <label class="solid"></label>
-    <label class="outer"><label class="empty"></label></label>
-  </view>
+  <wizard ringIndex="1"></wizard>
 </view>

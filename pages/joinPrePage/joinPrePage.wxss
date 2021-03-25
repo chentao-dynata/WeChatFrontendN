@@ -37,36 +37,3 @@
   border-top-left-radius: 3vh;
   border-bottom-right-radius: 3vh;
 }
-
-.wizard{
-  width: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin:110rpx auto;
-}
-
-.wizard label.solid {
-  display: block;
-  width: 2vh;
-  height: 2vh;
-  background-color:white;
-  border-radius:1vh;
-  margin-top:2vh;
-}
-.wizard .outer{
-  display: block;
-  width: 2vh;
-  height: 2vh;
-  background-color:white;
-  border-radius:1vh;
-  margin-top:2vh;
-}
-.wizard label.empty{
-  background-color: rgb(52, 124, 191);
-  width: 1.5vh;
-  height: 1.5vh;
-  display: block;
-  margin:0.35vh 0.35vh;
-  border-radius:0.75vh;
-}

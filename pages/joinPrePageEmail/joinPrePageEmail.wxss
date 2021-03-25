@@ -44,18 +44,3 @@
   font-size: 25rpx;
   display: block;
 }
-
-.wizard{
-  position: fixed;
-  width: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin:110rpx auto;
-  bottom: 10rpx;
-}
-
-.wizard label {
-  color: white;
-  display: block;
-}

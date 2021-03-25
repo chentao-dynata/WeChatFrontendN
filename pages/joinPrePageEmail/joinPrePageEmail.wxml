@@ -17,8 +17,5 @@
     </label>
     <button class="btn" bindtap="gotoJoinVerifyCode">Next</button>
   </view>
-  <view class="wizard">
-    <label style="background-color:white;border-radius:6px;height:12px;margin-top:6px;">_</label>
-    <label>O</label>
-  </view>
+  <wizard ringIndex="0"></wizard>
 </view>

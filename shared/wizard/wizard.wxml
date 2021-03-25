@@ -1,2 +1,6 @@
 <!--shared/wizard/wizard.wxml-->
-<text>shared/wizard/wizard.wxml</text>
+
+<view class="wizard">
+  <label class="{{ringIndex==0?'ring':''}}"></label>
+  <label class="{{ringIndex==1?'ring':''}}"></label>
+</view>

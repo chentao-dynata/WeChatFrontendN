@@ -7,10 +7,6 @@
   height: 8vh;
   justify-content:space-between;
 }
-.icon_row image{
-  width:8vh;
-  height: 6vh;
-}
 
 .icon_row .texts {
   display: flex;
