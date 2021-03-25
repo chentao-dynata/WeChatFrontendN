@@ -17,5 +17,15 @@
 }
 
 .subject .spotlight{
-  color: aqua;
+  color: rgb(74, 148, 208);
+}
+button{
+  background-color: white;
+}
+
+.splitter{
+  height: 5vh;
+  border-left: 1px solid black;
+  display: block;
+  margin: 2vh auto;
 }

@@ -2,12 +2,12 @@
 .active_survey{
   width: 90%;
   margin: 0 auto;
-  border: 1rpx solid black;
   border-radius: 2vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1vh 1vh 1vh 1vh;
+  box-shadow: 1px 1px 1px #888888;
 }
 
 .active_survey label{
@@ -24,6 +24,10 @@
 
 .active_survey .left button{
   margin: auto 0;
+  width: 45%;
+  height: 5vh;
+  line-height: 2vh;
+  font-size: 25rpx;
 }
 .active_survey .left .reward{
   color: red;
