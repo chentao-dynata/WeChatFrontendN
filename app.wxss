@@ -23,3 +23,10 @@
   align-content: center;
   vertical-align: middle;
 }
+
+.hidden{
+  display: none;
+}
+.show{
+  display: '';
+}

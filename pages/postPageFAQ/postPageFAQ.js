@@ -62,5 +62,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onSpotlightSwitch(e){
+    console.log(e.detail)
   }
+  
 })

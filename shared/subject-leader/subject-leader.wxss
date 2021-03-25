@@ -15,3 +15,7 @@
   margin: 5rpx auto;
   line-height: 6vh;
 }
+
+.subject .spotlight{
+  color: aqua;
+}
