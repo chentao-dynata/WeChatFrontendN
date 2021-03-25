@@ -7,11 +7,11 @@
   <subject-leader subject="FAQ" item1="FAQ" item2="Contact Us" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
 </view>
 <view class="ow_container general_info" style="margin:50rpx auto;">
-  <view class="ow_container">
+  <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
     <bullet-row icon="" subject="General Information" caption="How does it all work"></bullet-row>
   </view>
-  <view class="ow_container">
-    <bullet-row icon="" subject="General Information" caption="How does it all work"></bullet-row>
+  <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
+    <bullet-row icon="" subject="General Information" caption="This works this way"></bullet-row>
   </view>
 
 </view>

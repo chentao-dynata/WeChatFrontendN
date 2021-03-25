@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    tabIndex:0
   },
 
   /**
@@ -64,7 +64,9 @@ Page({
 
   },
   onSpotlightSwitch(e){
-    console.log(e.detail)
+    this.setData({
+      tabIndex:e.detail
+    })
   }
   
 })

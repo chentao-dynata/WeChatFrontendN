@@ -31,8 +31,10 @@ Component({
   methods: {
     shuffleSpotlight(e) {
       let index = e.target.dataset.ordinal
+      let t=this
       this.setData({
-        spotlightIndex: index
+        spotlightIndex: index,
+        subject:index==0?t.data.item1:t.data.item2
       })
       this.triggerEvent("onSpotlightSwitch", index)
     }
