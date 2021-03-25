@@ -3,8 +3,8 @@
   <navigation-bar title="FAQ" />
 </page-meta>
 <self-info></self-info>
-<view class="ow_container">
-  <subject-leader subject="FAQ" item1="FAQ" item2="Contact Us" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
+<view class="ow_container" style="padding:5vh 0 0 0;">
+  <subject-leader smashSubject="true" subject="FAQ" item1="FAQ" item2="Contact Us" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
 </view>
 <view class="ow_container general_info" style="margin:50rpx auto;">
   <view class="ow_container {{tabIndex==0?'show':'hidden'}}">

@@ -4,6 +4,10 @@ Component({
    * Component properties
    */
   properties: {
+    smashSubject:{
+      type:Boolean,
+      value:false
+    },
     subject: {
       type: 'String',
       value: ''
