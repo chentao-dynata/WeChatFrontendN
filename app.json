@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/postPageFAQ/postPageFAQ",
+    "pages/postPageCashout/postPageCashout",
+    "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/authroize/authroize",
     "pages/joinPrePage/joinPrePage",
     "pages/homePage/homePage",
@@ -37,13 +39,13 @@
         "text": "我的账户"
       },
       {
-        "pagePath": "pages/postPageFAQ/postPageFAQ",
+        "pagePath": "pages/postPageTakeSurvey/postPageTakeSurvey",
         "iconPath": "img/takeSurvey.png",
         "selectedIconPath": "img/takeSurvey_o.png",
         "text": "问卷"
       },
       {
-        "pagePath": "pages/postPageFAQ/postPageFAQ",
+        "pagePath": "pages/postPageCashout/postPageCashout",
         "iconPath": "img/cashOut.png",
         "selectedIconPath": "img/cashOut_o.png",
         "text": "兑换现金"

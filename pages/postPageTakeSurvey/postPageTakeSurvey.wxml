@@ -1,0 +1,17 @@
+<!--pages/postPageTakeSurvey/postPageTakeSurvey.wxml-->
+<page-meta>
+  <navigation-bar title="Survey" />
+</page-meta>
+<self-info></self-info>
+<view class="ow_container">
+  <subject-leader subject="Survey" item1="Survey" item2="Survey History" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
+</view>
+<view class="ow_container general_info" style="margin:50rpx auto;">
+  <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
+    surveys
+  </view>
+  <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
+    survey history
+  </view>
+
+</view>

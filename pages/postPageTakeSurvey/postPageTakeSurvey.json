@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "self-info":"/shared/logged-in-header/logged-in-header",
+    "subject-leader":"/shared/subject-leader/subject-leader"
+  }
+}
