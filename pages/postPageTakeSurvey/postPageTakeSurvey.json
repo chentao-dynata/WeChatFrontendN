@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "self-info":"/shared/logged-in-header/logged-in-header",
-    "subject-leader":"/shared/subject-leader/subject-leader"
+    "subject-leader":"/shared/subject-leader/subject-leader",
+    "survey-item":"/shared/active-suvey-item/active-survey-item"
   }
 }

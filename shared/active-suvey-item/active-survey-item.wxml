@@ -1,2 +1,13 @@
 <!--shared/active-suvey-item/active-survey-item.wxml-->
-<text>shared/active-suvey-item/active-survey-item.wxml</text>
+<view class="active_survey">
+  <view class="left">
+    <label for="" class="survey_name">#hashA {{surveyName}}</label>
+    <label for="" class="reward">Reward:60 points</label>
+    <button class="btn_normal {{hisMod?'hidden':'show'}}">Submit</button>
+    <label style="display:{{hisMod?'':'none'}};">Date:12/05/2019</label>
+  </view>
+  <view class="clock">
+    15mins
+  </view>
+
+</view>

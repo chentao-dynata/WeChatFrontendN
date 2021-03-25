@@ -4,7 +4,14 @@ Component({
    * Component properties
    */
   properties: {
-
+    hisMod:{
+      type:Boolean,
+      value:false
+    },
+    surveyName:{
+      type:String,
+      value:''
+    }
   },
 
   /**

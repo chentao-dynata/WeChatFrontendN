@@ -1,1 +1,44 @@
 /* shared/active-suvey-item/active-survey-item.wxss */
+.active_survey{
+  width: 90%;
+  margin: 0 auto;
+  border: 1rpx solid black;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vh 1vh 1vh 1vh;
+}
+
+.active_survey label{
+  display: block;
+}
+
+.active_survey .left{
+  display: flex;
+  flex-direction: column;
+  border-right: 1rpx solid black;
+  width: 80%;
+  justify-content: flex-start;
+}
+
+.active_survey .left button{
+  margin: auto 0;
+}
+.active_survey .left .reward{
+  color: red;
+  font-weight: bold;
+}
+.btn_normal{
+  background-color: red;
+  color: white;
+  border-top-left-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+}
+
+.hidden{
+  display: none;
+}
+.show{
+  display: '';
+}

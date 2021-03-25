@@ -4,14 +4,13 @@
 </page-meta>
 <self-info></self-info>
 <view class="ow_container">
-  <subject-leader subject="Survey" item1="Survey" item2="Survey History" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
+  <subject-leader subject="Survey" item1="Survey" item2="Completed Surveys" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
 </view>
 <view class="ow_container general_info" style="margin:50rpx auto;">
   <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
-    surveys
+    <survey-item surveyName='survey'></survey-item>
   </view>
   <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
-    survey history
+    <survey-item hisMod="true" surveyName='history survey'></survey-item>
   </view>
-
 </view>

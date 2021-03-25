@@ -1,2 +1,17 @@
 <!--pages/postPageCashout/postPageCashout.wxml-->
-<text>pages/postPageCashout/postPageCashout.wxml</text>
+<view class="current_coin">
+  <view class="info">
+    <view class="pig"></view>
+    <view class="total">
+      <label for="">Current Cat Coin:</label>
+      <label class="points">100</label>
+    </view>
+  </view>
+</view>
+
+<view class="cashout_amount">
+  <label for="">Cash out amount:</label>
+  <input type="text" value="" placeholder="Cash out cannot less than {{'***'}} amount" />
+  <label for="">The amount you can cash out is***</label>
+  <button class="btn_normal">Cash Out</button>
+</view>
