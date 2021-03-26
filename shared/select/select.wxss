@@ -1,0 +1,19 @@
+/* shared/select/select.wxss */
+.select {
+  width: 100%;
+  position: relative;
+}
+
+.opts {
+  border: 1px solid black;
+}
+
+.opt {
+  position: absolute;
+  z-index: 2;
+}
+
+.opt label {
+  display: block;
+  width: 100%;
+}

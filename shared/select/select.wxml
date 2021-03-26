@@ -1,0 +1,10 @@
+<!--shared/select/select.wxml-->
+<text>shared/select/select.wxml</text>
+<view class="select">
+  <input type="text" bindtap="toggleOpt" class="opts" placeholder="select your option" value="{{selectedVal}}" />
+  <view class="opt" style="display:{{optVisible?'':'none'}}">
+    <label bindtap="doSelect" data-val="1">1</label>
+    <label for="">2</label>
+    <label for="">3</label>
+  </view>
+</view>

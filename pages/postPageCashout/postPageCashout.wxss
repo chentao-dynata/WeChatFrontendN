@@ -63,4 +63,5 @@
   background-repeat: no-repeat;
   background-position: 2% 2%;
   background-size: 5% 100%;
+  padding-left: 3vh;
 }

@@ -5,6 +5,7 @@ Page({
   data: {
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
+    showOverlay:'false'
   },
   onLoad() {
     console.log(app.globalData)
@@ -78,7 +79,11 @@ Page({
     //   }
     // })
     this.setData({
-      actionsheethidden: false
+      actionsheethidden: false,
+      showOverlay:'true'
+    })
+    wx.showLoading({
+      title: 'wait...',
     })
   },
   bindmenu1() {
@@ -93,7 +98,11 @@ Page({
   },
   bindmenu3() {
     this.setData({
-      actionsheethidden: true
+      actionsheethidden: true,
+      showOverlay:'false'
+    })
+    wx.hideLoading({
+      success: (res) => {},
     })
   },
   gotoTab(e) {
