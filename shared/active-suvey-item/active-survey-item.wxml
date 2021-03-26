@@ -7,7 +7,7 @@
     <label style="display:{{hisMod?'':'none'}};">Date:12/05/2019</label>
   </view>
   <view class="clock">
-    15mins
+    <text>15mins</text>
   </view>
 
 </view>

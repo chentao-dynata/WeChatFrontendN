@@ -22,7 +22,7 @@
 
 .subject .spotlight{
   color: rgb(74, 148, 208);
-  text-decoration:underline;
+  text-decoration: none;
 }
 .subject button{
   background-color: white;
@@ -30,6 +30,7 @@
   font-weight: normal;
   line-height:50rpx;  
   height: 7vh;
+  text-decoration:underline;
 }
 
 .splitter{

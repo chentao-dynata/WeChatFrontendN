@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/homePage/homePage",
-    "pages/authroize/authroize",
-    "pages/postPageCashout/postPageCashout",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
+    "pages/authroize/authroize",
+    "pages/homePage/homePage",
+    "pages/postPageCashout/postPageCashout",
     "pages/postPageFAQ/postPageFAQ",
     "pages/joinPrePage/joinPrePage",
     "pages/postPageProfile/postPageProfile",
