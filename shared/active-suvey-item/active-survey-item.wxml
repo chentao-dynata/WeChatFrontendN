@@ -2,7 +2,7 @@
 <view class="active_survey">
   <view class="left">
     <label for="" class="survey_name">#hashA {{surveyName}}</label>
-    <label for="" class="reward">Reward:60 points</label>
+    <label for="" class="reward" style="color:{{hisMod?'rgb(74, 148, 208)':'red'}}">Reward:60 points</label>
     <button class="btn_normal {{hisMod?'hidden':'show'}}">Submit</button>
     <label style="display:{{hisMod?'':'none'}};">Date:12/05/2019</label>
   </view>

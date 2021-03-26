@@ -31,7 +31,7 @@ action-sheet-item{
   background-color: rgb(222, 222, 222);
   padding: 0 10%;
   flex-wrap: wrap;
-  padding-bottom: 6vh;
+  padding-bottom: 17vh;
 }
 .dashboard .entry{
   color: orange;

@@ -1,6 +1,6 @@
 {
   "usingComponents": {
     "self-info":"/shared/logged-in-header/logged-in-header",
-    "tabBar": "/shared/tabBar/tabBar"
+    "overlay":"/shared/overlay/overlay"
   }
 }

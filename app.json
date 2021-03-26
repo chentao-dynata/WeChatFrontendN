@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/homePage/homePage",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/authroize/authroize",
-    "pages/homePage/homePage",
     "pages/postPageCashout/postPageCashout",
     "pages/postPageFAQ/postPageFAQ",
     "pages/joinPrePage/joinPrePage",
