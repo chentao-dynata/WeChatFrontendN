@@ -4,9 +4,17 @@ Component({
    * Component properties
    */
   properties: {
-    selectedVal:{
+    selectedVal: {
+      type: String,
+      value: ''
+    },
+    popArray:{
       type:String,
       value:''
+    },
+    theArray:{
+      type:Array,
+      value:[]
     }
   },
 
@@ -14,8 +22,7 @@ Component({
    * Component initial data
    */
   data: {
-    optVisible: true,
-    selectedVal:''
+    optVisible: true
   },
 
   /**
@@ -23,19 +30,21 @@ Component({
    */
   methods: {
     toggleOpt() {
-      const t=this
-      console.log(t.data)
+      
+      const t = this
+      console.log(t.properties)
       t.setData({
-        optVisible:!t.data.optVisible
+        optVisible: !t.data.optVisible,
+        theArray:t.properties.popArray.split(',')
       })
     },
-    doSelect(e){
-      console.log(e)
-      const t=this
+    doSelect(e) {
+      const t = this
       t.setData({
-        selectedVal:e.target.dataset.val
+        theVal:t.data.theArray[e.target.dataset.val]
       })
       this.toggleOpt()
+      // 
     }
   }
 })

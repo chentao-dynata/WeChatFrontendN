@@ -2,18 +2,33 @@
 .select {
   width: 100%;
   position: relative;
+  margin: 1vh auto;
 }
 
 .opts {
-  border: 1px solid black;
+  border: 1px solid rgb(233, 237, 238);
+  height: 6vh;
+  display: block;
+  color: rgb(123, 123, 123);
+  padding-left: 1vh;
+  box-shadow: 1px 1px 1px #888888;
 }
 
 .opt {
   position: absolute;
   z-index: 2;
+  width: 100%;
 }
 
-.opt label {
+.opt .item {
   display: block;
   width: 100%;
+  box-shadow: 1px 1px 1px #888888;
+  height: 6vh;
+  color: rgb(123, 123, 123);
+  line-height: 6vh;
+}
+
+.opt .item:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
