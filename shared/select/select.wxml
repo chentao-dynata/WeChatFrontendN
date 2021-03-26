@@ -3,7 +3,7 @@
   <view bindtap="toggleOpt" class="opts">{{theVal?theVal:'Please choose..'}}</view>
   <view style="display:{{optVisible?'':'none'}};" class="opt">
     <view wx:for="{{theArray}}" class="item">
-      <view class="item" bindtap="doSelect" data-val="{{index}}">{{theArray[index]}}</view>
+      <view class="text" bindtap="doSelect" data-val="{{index}}">{{theArray[index]}}</view>
     </view>
   </view>
 </view>

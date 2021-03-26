@@ -15,6 +15,10 @@ Component({
     theArray:{
       type:Array,
       value:[]
+    },
+    theVal:{
+      type:String,
+      value:''
     }
   },
 
@@ -22,7 +26,7 @@ Component({
    * Component initial data
    */
   data: {
-    optVisible: true
+    optVisible: false
   },
 
   /**

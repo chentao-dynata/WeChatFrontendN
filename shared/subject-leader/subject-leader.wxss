@@ -26,7 +26,7 @@
 }
 .subject button{
   background-color: white;
-  font-size: 28rpx;
+  font-size: 27rpx;
   font-weight: normal;
   line-height:50rpx;  
   height: 7vh;

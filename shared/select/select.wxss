@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.opt .item {
+.opt .item,.opt .text {
   display: block;
   width: 100%;
   box-shadow: 1px 1px 1px #888888;
