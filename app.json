@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/homePage/homePage",
+    "pages/authroize/authroize",
     "pages/postPageCashout/postPageCashout",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/postPageFAQ/postPageFAQ",
-    "pages/authroize/authroize",
     "pages/joinPrePage/joinPrePage",
-    "pages/homePage/homePage",
     "pages/postPageProfile/postPageProfile",
     "pages/noNetwork/noNetwork",
     "pages/joinPrePageEmail/joinPrePageEmail",

@@ -6,7 +6,7 @@
       <image src="{{photo}}" />
     </view>
     <view class="info_field first">
-      <label for="">Man</label>
+      <label for="">{{nickName}}</label>
       <label for="">ID:007</label>
     </view>
   </view>

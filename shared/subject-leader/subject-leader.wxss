@@ -4,6 +4,10 @@
   flex-direction: column;
   text-align: center;
 }
+.subject text{
+  font-size: 40rpx;
+  font-weight: bold;
+}
 
 .subject .row {
   width: 100%;
@@ -12,19 +16,24 @@
   justify-content: space-around;
   border: 1px solid rgb(233, 237, 238);
   width: 90%;
-  margin: 5rpx auto;
-  line-height: 6vh;
+  margin: 3vh auto;
+  line-height: 4vh;
 }
 
 .subject .spotlight{
   color: rgb(74, 148, 208);
+  text-decoration:underline;
 }
-button{
+.subject button{
   background-color: white;
+  font-size: 28rpx;
+  font-weight: normal;
+  line-height:50rpx;  
+  height: 7vh;
 }
 
 .splitter{
-  height: 5vh;
+  height: 3vh;
   border-left: 1px solid black;
   display: block;
   margin: 2vh auto;

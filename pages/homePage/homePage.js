@@ -1,5 +1,5 @@
 // pages/homePage/homePage.js
-const app=getApp()
+const app = getApp()
 Page({
 
   data: {
@@ -17,7 +17,7 @@ Page({
       menu2: "menu2",
       menu3: "menu3",
       actionsheethidden: true,
-      photo:app.globalData.userInfo?app.globalData.userInfo.avatarUrl:''
+      photo: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : ''
     })
   },
 
@@ -96,9 +96,16 @@ Page({
       actionsheethidden: true
     })
   },
-  gotoprofile(){
+  gotoTab(e) {
+    const tabUrls = [
+      "/pages/postPageProfile/postPageProfile",
+      "/pages/postPageTakeSurvey/postPageTakeSurvey",
+      "/pages/postPageCashout/postPageCashout",
+      "/pages/postPageFAQ/postPageFAQ"
+    ]
+    let i = e.target.dataset.tabindex
     wx.switchTab({
-      url: '/pages/postPageProfile/postPageProfile',
+      url: tabUrls[i - 1]
     })
   }
 })

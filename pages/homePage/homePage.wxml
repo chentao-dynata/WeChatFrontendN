@@ -12,10 +12,10 @@
   </view>
 </view>
 <view class="dashboard">
-  <view class="profile icons entry" bindtap="gotoprofile"></view>
-  <view class="cashout icons entry"></view>
-  <view class="completed icons entry"></view>
-  <view class="faq icons entry"></view>
+  <view class="profile icons entry" data-tabIndex="1" bindtap="gotoTab"></view>
+  <view class="cashout icons entry" data-tabIndex="3" bindtap="gotoTab"></view>
+  <view class="completed icons entry" data-tabIndex="2" bindtap="gotoTab"></view>
+  <view class="faq icons entry" data-tabIndex="4" bindtap="gotoTab"></view>
 </view>
 
 <action-sheet hidden="{{actionsheethidden}}">

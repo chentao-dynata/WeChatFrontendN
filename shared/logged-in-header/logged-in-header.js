@@ -22,9 +22,12 @@ Component({
   lifetimes: {
     ready() {
       console.log(app)
-      this.setData({
-        photo: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : ''
-      })
+      const userInfo = app.globalData.userInfo
+      if (userInfo)
+        this.setData({
+          photo: userInfo.avatarUrl,
+          nickName: 'Man'//userInfo.nickName
+        })
     }
   }
 })

@@ -6,7 +6,7 @@
 <view class="ow_container" style="padding:3vh 0 0 0;">
   <subject-leader subject="Survey" item1="Survey" item2="Completed Surveys" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
 </view>
-<view class="ow_container general_info" style="margin:50rpx auto;">
+<view class="ow_container general_info" style="margin:20rpx auto;">
   <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
     <survey-item surveyName='survey'></survey-item>
   </view>
