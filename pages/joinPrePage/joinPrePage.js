@@ -64,20 +64,16 @@ Page({
 
   },
   gotoJoinSendEmail: function () {
-    wx.navigateTo({
-      url: '/pages/joinPrePageEmail/joinPrePageEmail',
-    })
-  },
-  bindMultiPickerChange: function (e) {
-    console.log('----------------公用日期时间选择器组件传回的值----------------');
-    console.log(e.detail)
-    let t = this
+    const t=this
+    console.log(t.data)
 
-    t.setData({
-      birthday: e.detail.slice(0, 3).join('-')
-    })
+    // wx.navigateTo({
+    //   url: '/pages/joinPrePageEmail/joinPrePageEmail',
+    // })
   },
-  showpicker(e) {
-    console.log('--looking for picker--')
+  pickerChangeBirthday(e){
+    this.setData({
+      birthday:e.detail
+    })
   }
 })

@@ -27,6 +27,7 @@ Component({
       t.setData({
         selectedDate:e.detail.value
       })
+      t.triggerEvent("ChangeExternal",e.detail.value)
     }
   }
 })

@@ -9,9 +9,8 @@
   </label>
 </view>
 <view class="container pre_form">
-  <datepicker filedVal="{{birthday}}" bindchange="pickerchange">
+  <datepicker SelectedValue="{{birthday}}" bindchange="pickerchange" bindChangeExternal="pickerChangeBirthday">
   </datepicker>
-  <!-- <input type="text" placeholder="Enter your date of birth" bindfocus="showpicker" value="{{birthday}}" /> -->
   <input type="text" placeholder="Enter your post code" />
   <input type="text" placeholder="Select your education" />
   <input type="text" placeholder="Select your employment status" />
