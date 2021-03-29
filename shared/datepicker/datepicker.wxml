@@ -1,0 +1,6 @@
+<!--shared/datepicker/datepicker.wxml-->
+<view class="pickerdate">
+  <picker mode="date" value="{{date}}" start="1900-09-01" end="2021-09-01" bindchange="bindDateChange">
+    <input value="{{selectedDate}}" placeholder="Your selected date" />
+  </picker>
+</view>

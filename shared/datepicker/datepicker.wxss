@@ -1,0 +1,7 @@
+/* shared/datepicker/datepicker.wxss */
+.pickerdate{
+  width: 100%;
+}
+.pickerdate input{
+  width: 100%;
+}

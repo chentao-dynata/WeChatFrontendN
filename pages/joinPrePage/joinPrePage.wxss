@@ -22,7 +22,12 @@
   border-top-right-radius: 100rpx;
   padding:50rpx 0;
 }
-.pre_form input,datetimepicker{
+
+.pre_form datepicker{
+  width: 80%;
+}
+
+.pre_form input{
   background-color: white;
   height: 6vh;
   width: 80%;
