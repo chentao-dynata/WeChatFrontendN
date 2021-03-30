@@ -33,7 +33,6 @@ Component({
     bindDateChange(e) {
       const t = this
       console.log(t)
-      t.properties.SelectedValue = e.detail.value
       t.setData({
         selectedDate: e.detail.value
       })
