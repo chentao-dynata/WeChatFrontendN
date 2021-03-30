@@ -9,11 +9,11 @@
   </label>
 </view>
 <view class="container pre_form">
-  <datepicker SelectedValue="{{birthday}}" bindchange="pickerchange" bindChangeExternal="pickerChangeBirthday">
+  <datepicker Holder="Enter your date of birth" SelectedValue="{{birthday}}" bindChangeExternal="pickerChangeBirthday">
   </datepicker>
-  <input type="text" placeholder="Enter your post code" />
-  <input type="text" placeholder="Select your education" />
-  <input type="text" placeholder="Select your employment status" />
+  <arraypicker array="{{education}}" holder="{{educationSelected}}" bindchangeExternal="pickerChangeEducation"></arraypicker>
+  <input type="text" bindblur="blurChangePostalCode" value="{{postalCode}}" placeholder="Enter your postal code" />
+  <arraypicker array="{{employmentStatus}}" holder="{{employmentSelected}}" bindchangeExternal="pickerChangeEmploymentStatus" ></arraypicker>
   <button class="btn" bindtap="gotoJoinSendEmail">Next</button>
   <wizard ringIndex="1"></wizard>
 </view>

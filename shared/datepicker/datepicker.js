@@ -4,9 +4,18 @@ Component({
    * Component properties
    */
   properties: {
-    SelectedValue: {
+    Holder: {
       type: String,
       value: ''
+    },
+    SelectedValue: {
+      type: String,
+      value: null,
+      observer: function () {
+        this.setData({
+          selectedDate: null
+        })
+      }
     }
   },
 
@@ -14,7 +23,7 @@ Component({
    * Component initial data
    */
   data: {
-    selectedDate: ''
+    selectedDate: null
   },
 
   /**
@@ -23,11 +32,12 @@ Component({
   methods: {
     bindDateChange(e) {
       const t = this
+      console.log(t)
       t.properties.SelectedValue = e.detail.value
       t.setData({
-        selectedDate:e.detail.value
+        selectedDate: e.detail.value
       })
-      t.triggerEvent("ChangeExternal",e.detail.value)
+      t.triggerEvent("ChangeExternal", e.detail.value)
     }
   }
 })
