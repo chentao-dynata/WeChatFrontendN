@@ -11,10 +11,11 @@ Component({
     SelectedValue: {
       type: String,
       value: null,
-      observer: function () {
-        this.setData({
-          selectedDate: null
-        })
+      observer: function (a, b, c) {
+        if (b != null && b.indexOf('-') != -1)
+          this.setData({
+            selectedDate: null
+          })
       }
     }
   },
@@ -32,7 +33,6 @@ Component({
   methods: {
     bindDateChange(e) {
       const t = this
-      console.log(t)
       t.setData({
         selectedDate: e.detail.value
       })
