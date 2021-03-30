@@ -12,7 +12,7 @@ Component({
       type: String,
       value: null,
       observer: function (a, b, c) {
-        if (b != null && b.indexOf('-') != -1)
+        if (b != null && b != '')
           this.setData({
             selectedDate: null
           })
