@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    birthday: null,
+    birthday: '',
     education: ['Kindergarten', 'Primary school', 'Middle school', 'High school', 'Bachelor', 'Master', 'Doctor', 'Professor'],
     educationSelected: 'Select your education',
     employmentStatus: ['Unemployed', 'Employed'],

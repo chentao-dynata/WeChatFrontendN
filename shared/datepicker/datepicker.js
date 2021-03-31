@@ -10,11 +10,12 @@ Component({
     },
     SelectedValue: {
       type: String,
-      value: null,
+      value: '',
       observer: function (a, b, c) {
-        if (b != null && b != '')
+        const isRefresh = a == '' && b != ''
+        if (isRefresh)
           this.setData({
-            selectedDate: null
+            selectedDate: ''
           })
       }
     }
