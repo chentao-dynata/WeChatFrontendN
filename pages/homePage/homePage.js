@@ -5,7 +5,7 @@ Page({
   data: {
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
-    showOverlay:'false'
+    showOverlay: 'false'
   },
   onLoad() {
     console.log(app.globalData)
@@ -80,7 +80,7 @@ Page({
     // })
     this.setData({
       actionsheethidden: false,
-      showOverlay:'true'
+      showOverlay: 'true'
     })
     wx.showLoading({
       title: 'wait...',
@@ -99,7 +99,7 @@ Page({
   bindmenu3() {
     this.setData({
       actionsheethidden: true,
-      showOverlay:'false'
+      showOverlay: 'false'
     })
     wx.hideLoading({
       success: (res) => {},
@@ -113,6 +113,40 @@ Page({
       "/pages/postPageFAQ/postPageFAQ"
     ]
     let i = e.target.dataset.tabindex
+    //check user information integrety
+    if (i == 3) {
+      let infoIsComplete = false
+      if (!infoIsComplete) {
+        wx.showModal({
+          cancelColor: 'cancelColor',
+          title: 'Authorization',
+          content: 'For your safety, please complete your mobile number and name, then apply cash out',
+          success(res) {
+            if (res.confirm) {
+              //go to user profile tab for incomplete user info
+              wx.switchTab({
+                url: tabUrls[0]
+              })
+            } else if (res.cancel) {}
+          }
+        })
+      } else {
+        wx.showToast({
+          title: 'OK',
+          icon: 'success',
+          duration: 3000
+        })
+
+        setTimeout(() => {
+          wx.switchTab({
+            url: tabUrls[i - 1]
+          })
+        }, 3000);
+        return
+      }
+
+      if (!infoIsComplete) return
+    }
     wx.switchTab({
       url: tabUrls[i - 1]
     })

@@ -6,9 +6,9 @@ Page({
    */
   data: {
     birthday: '',
-    education: ['Kindergarten', 'Primary school', 'Middle school', 'High school', 'Bachelor', 'Master', 'Doctor', 'Professor'],
+    education: ['Incomplete Secondary Education', 'Secondary Education Completed', 'Some University or Vocational Cert', 'Vocational or Professinal Credential. completed', 'Undergraduate Education Completed', 'Postgraduate Education Completed', 'Doctorate,Post-doctorate', 'Prefer not to answer'],
     educationSelected: 'Select your education',
-    employmentStatus: ['Unemployed', 'Employed'],
+    employmentStatus: ['Full-time Employment', 'Part-time Employment(Less than 32 hrs)', 'Retired/Disabled/Unable to work', 'Student', 'Not working/looking for work', 'Homemaker/Stay-at-Home Parent'],
     employmentSelected: 'Select your employment status',
     postalCode: null
   },
@@ -56,9 +56,7 @@ Page({
     console.log(this)
     this.setData({
       birthday: null,
-      education: ['Kindergarten', 'Primary school', 'Middle school', 'High school', 'Bachelor', 'Master', 'Doctor', 'Professor'],
       educationSelected: 'Select your education',
-      employmentStatus: ['Unemployed', 'Employed'],
       employmentSelected: 'Select your employment status',
       postalCode: null
     })

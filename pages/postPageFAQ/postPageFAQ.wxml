@@ -9,10 +9,11 @@
 <view class="ow_container general_info" style="margin:50rpx auto;">
   <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
     <bullet-row icon="" subject="General Information" caption="How does it all work"></bullet-row>
-    <select popArray="1,2,3"></select>
   </view>
   <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
     <bullet-row icon="" subject="General Information" caption="This works this way"></bullet-row>
+    <select popArray="1,2,3"></select>
+
   </view>
 
 </view>
