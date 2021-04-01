@@ -2,8 +2,11 @@
 
 <view class="icon_row {{iconsArray[iconIndex]}} icon">
   <view class="texts">
-    <label>{{subject}}</label>
+    <!-- <label>{{subject}}</label> -->
+    <input type="text" value="{{subject}}" placeholder="{{caption}}" bindblur="inputBlur" />
     <label class="small_grey">{{caption}}</label>
   </view>
-  
+  <!-- <view class="texts">
+  </view> -->
+
 </view>

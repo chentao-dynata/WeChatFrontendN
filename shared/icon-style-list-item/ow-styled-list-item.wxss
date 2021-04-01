@@ -17,6 +17,11 @@
   display: block;
   line-height: 30rpx;
 }
+.icon_row .texts input{
+  width: 100%;
+}
+
+
 .icon_row .texts label.small_grey{
   color: grey;
   font-size: 25rpx;

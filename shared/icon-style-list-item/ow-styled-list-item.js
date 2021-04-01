@@ -31,6 +31,11 @@ Component({
    * Component methods
    */
   methods: {
-
+    inputBlur(e){
+      const t=this
+      const val=e.detail.value
+      const icon=t.data.iconIndex
+      this.triggerEvent('iconRowBlur',{val,icon})
+    }
   }
 })
