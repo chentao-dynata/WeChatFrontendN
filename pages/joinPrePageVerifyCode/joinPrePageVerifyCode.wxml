@@ -1,6 +1,19 @@
-<view>
+<page-meta>
+  <navigation-bar title="Join Verify Code" />
+</page-meta>
+<page-header></page-header>
+<view class="caption">
+  <label class="title">Please fill in the below information.</label>
+  <label class="content">More surveys will be assigned by filling in the info below. Meaning more chance to earn points!
+  </label>
+</view>
 
+<view class="container pre_form">
+  <label for="">
+    The verification code was sent to {{}}
+  </label>
   <input type="text" placeholder="Enter verification code" />
-  <button bindtap="gotoHomePage">Confirm</button>
+  <button class="btn" bindtap="gotoHomePage">Confirm</button>
   <navigator url="/pages/joinPrePageEmail/joinPrePageEmail">Resend code</navigator>
+
 </view>

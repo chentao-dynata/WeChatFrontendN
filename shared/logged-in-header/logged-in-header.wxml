@@ -1,2 +1,18 @@
 <!--shared/logged-in-header/logged-in-header.wxml-->
-<text>shared/logged-in-header/logged-in-header.wxml</text>
+
+<view class="self_info">
+  <view class="left">
+    <view class="photo">
+      <image src="{{photo}}" />
+    </view>
+    <view class="info_field first">
+      <label for="">{{nickName}}</label>
+      <label for="">ID:007</label>
+    </view>
+  </view>
+
+  <view class="info_field last">
+    <label for="">Points</label>
+    <label for="">100</label>
+  </view>
+</view>

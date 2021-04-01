@@ -1,0 +1,7 @@
+/* pages/postPageProfile/postPageProfile.wxss */
+.name_mobile,.profile_etc {
+  width: 90%;
+  margin: 3vh auto;
+}
+
+

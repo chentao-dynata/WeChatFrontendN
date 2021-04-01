@@ -1,0 +1,4 @@
+<!--shared/arrayPicker/arrayPicker.wxml-->
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <input style="width:100%;" value="{{array[index]}}" placeholder="{{holder}}" />
+</picker>

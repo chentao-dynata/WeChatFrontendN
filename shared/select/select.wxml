@@ -1,0 +1,9 @@
+<!--shared/select/select.wxml-->
+<view class="select">
+  <view bindtap="toggleOpt" class="opts">{{theVal?theVal:'Please choose..'}}</view>
+  <view style="display:{{optVisible?'':'none'}};" class="opt">
+    <view wx:for="{{theArray}}" class="item">
+      <view class="text" bindtap="doSelect" data-val="{{index}}">{{theArray[index]}}</view>
+    </view>
+  </view>
+</view>

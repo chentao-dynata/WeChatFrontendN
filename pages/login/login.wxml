@@ -1,20 +1,21 @@
 <!--pages/login/login.wxml-->
-<view>
-  <view class="login_form">
-
-    <label>Already in?</label>
-
-    <datetimepicker id="date-time-picker" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel"></datetimepicker>
-
-    <input placeholder="Username" value="{{username}}" />
-    <input placeholder="Password" />
-    <button class="btn btna" bindtap="gotoHomePage">Login</button>
-    <label>Not a member yet?</label>
-    <button class="btn btnb" bindtap="gotojoinflow">Join Now</button>
-
+<page-meta>
+  <navigation-bar title="Login" />
+</page-meta>
+<page-header></page-header>
+<view class="login_form">
+  <label>Are you already an existing OpinionWOrld member?</label>
+  <datetimepicker id="date-time-picker" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel">
+  </datetimepicker>
+  <input placeholder="Enter your email" value="{{username}}" />
+  <input placeholder="Enter your password" />
+  <button class="btn btna" bindtap="gotoHomePage">Login</button>
+  <view>
+    <label for="">Forgot password?(Link to website)</label>
+    <label class="owsitelink" for="">http://www.opinionworld.com.au/en-au/general/forgot-password</label>
   </view>
-
-
-
-
+</view>
+<view class="join">
+  <label>Not a member yet?</label>
+  <button class="joinbtn" bindtap="gotojoinflow">Join Now</button>
 </view>

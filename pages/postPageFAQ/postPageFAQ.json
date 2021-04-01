@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "self-info":"/shared/logged-in-header/logged-in-header",
+    "subject-leader":"/shared/subject-leader/subject-leader",
+    "bullet-row":"/shared/bullet-list-item/bullet-list-item",
+    "select":"/shared/select/select"
+  }
+}

@@ -1,11 +1,14 @@
 // pages/homePage/homePage.js
+const app = getApp()
 Page({
 
   data: {
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
+    showOverlay:'false'
   },
   onLoad() {
+    console.log(app.globalData)
     this.setData({
       nbTitle: 'HomePage',
       nbLoading: true,
@@ -14,7 +17,8 @@ Page({
       menu1: "menu1",
       menu2: "menu2",
       menu3: "menu3",
-      actionsheethidden: true
+      actionsheethidden: true,
+      photo: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : ''
     })
   },
 
@@ -75,7 +79,11 @@ Page({
     //   }
     // })
     this.setData({
-      actionsheethidden: false
+      actionsheethidden: false,
+      showOverlay:'true'
+    })
+    wx.showLoading({
+      title: 'wait...',
     })
   },
   bindmenu1() {
@@ -90,7 +98,23 @@ Page({
   },
   bindmenu3() {
     this.setData({
-      actionsheethidden: true
+      actionsheethidden: true,
+      showOverlay:'false'
+    })
+    wx.hideLoading({
+      success: (res) => {},
+    })
+  },
+  gotoTab(e) {
+    const tabUrls = [
+      "/pages/postPageProfile/postPageProfile",
+      "/pages/postPageTakeSurvey/postPageTakeSurvey",
+      "/pages/postPageCashout/postPageCashout",
+      "/pages/postPageFAQ/postPageFAQ"
+    ]
+    let i = e.target.dataset.tabindex
+    wx.switchTab({
+      url: tabUrls[i - 1]
     })
   }
 })

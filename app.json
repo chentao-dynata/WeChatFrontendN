@@ -1,12 +1,17 @@
 {
   "pages": [
-    "pages/authroize/authroize",
-    "pages/homePage/homePage",
-    "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",
-    "pages/joinPrePageEmail/joinPrePageEmail",
     "pages/joinPrePage/joinPrePage",
+    "pages/authroize/authroize",
+    "pages/postPageTakeSurvey/postPageTakeSurvey",
+    "pages/postPageFAQ/postPageFAQ",
+    "pages/homePage/homePage",
+    "pages/postPageCashout/postPageCashout",
+    "pages/postPageProfile/postPageProfile",
+    "pages/noNetwork/noNetwork",
+    "pages/joinPrePageEmail/joinPrePageEmail",
+    "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",
     "pages/login/login",
-    "pages/noNetwork/noNetwork"
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,7 +19,45 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "color": "#999999",
+    "selectedColor": "#F72A57",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home_o.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/postPageProfile/postPageProfile",
+        "iconPath": "img/profile.png",
+        "selectedIconPath": "img/profile_o.png",
+        "text": "我的账户"
+      },
+      {
+        "pagePath": "pages/postPageTakeSurvey/postPageTakeSurvey",
+        "iconPath": "img/takeSurvey.png",
+        "selectedIconPath": "img/takeSurvey_o.png",
+        "text": "问卷"
+      },
+      {
+        "pagePath": "pages/postPageCashout/postPageCashout",
+        "iconPath": "img/cashOut.png",
+        "selectedIconPath": "img/cashOut_o.png",
+        "text": "兑换现金"
+      },
+      {
+        "pagePath": "pages/postPageFAQ/postPageFAQ",
+        "iconPath": "img/faq.png",
+        "selectedIconPath": "img/faq_o.png",
+        "text": "帮助中心"
+      }
+    ]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
-  
 }

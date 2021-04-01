@@ -5,7 +5,12 @@ Page({
    * Page initial data
    */
   data: {
-
+    birthday: '',
+    education: ['Kindergarten', 'Primary school', 'Middle school', 'High school', 'Bachelor', 'Master', 'Doctor', 'Professor'],
+    educationSelected: 'Select your education',
+    employmentStatus: ['Unemployed', 'Employed'],
+    employmentSelected: 'Select your employment status',
+    postalCode: null
   },
 
   /**
@@ -47,7 +52,16 @@ Page({
    * Page event handler function--Called when user drop down
    */
   onPullDownRefresh: function () {
-
+    console.log('Refreshing by pulling down..')
+    console.log(this)
+    this.setData({
+      birthday: null,
+      education: ['Kindergarten', 'Primary school', 'Middle school', 'High school', 'Bachelor', 'Master', 'Doctor', 'Professor'],
+      educationSelected: 'Select your education',
+      employmentStatus: ['Unemployed', 'Employed'],
+      employmentSelected: 'Select your employment status',
+      postalCode: null
+    })
   },
 
   /**
@@ -63,9 +77,35 @@ Page({
   onShareAppMessage: function () {
 
   },
-  gotoJoinSendEmail:function () {
+  gotoJoinSendEmail: function () {
+    const t = this
+    console.log(t.data)
     wx.navigateTo({
       url: '/pages/joinPrePageEmail/joinPrePageEmail',
     })
+  },
+  pickerChangeBirthday(e) {
+    this.setData({
+      birthday: e.detail
+    })
+  },
+  pickerChangeEducation(e) {
+    const t = this
+    this.setData({
+      educationSelected: t.data.education[e.detail]
+    })
+  },
+  pickerChangeEmploymentStatus(e) {
+    const t = this
+    this.setData({
+      employmentSelected: t.data.employmentStatus[e.detail]
+    })
+  },
+  blurChangePostalCode(e) {
+    const t = this
+    this.setData({
+      postalCode: e.detail.value
+    })
+
   }
 })

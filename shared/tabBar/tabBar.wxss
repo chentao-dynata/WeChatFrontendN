@@ -6,6 +6,8 @@
   background: #F6F6F7;
   display: flex;
   z-index: 999;
+  color: grey;
+  font-weight: bold;
 }
 .section_item {
   flex: 1;
@@ -13,13 +15,15 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 5rpx 0 0 0;
+  padding: 5rpx 0 10rpx 0;
 }
 .section_item .section_image {
   width: 55rpx;
   height: 55rpx;
 }
 .section_item .section_title {
-  font-size: 20rpx;
-  font-weight:300;
+  font-size: 26rpx;
+}
+.active{
+  color: rgb(73, 148, 208);
 }

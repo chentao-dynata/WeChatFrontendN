@@ -64,7 +64,7 @@ Page({
 
   },
   gotoHomePage(){
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/homePage/homePage',
     })
   }

@@ -3,9 +3,19 @@
     background-color="{{nbBackgroundColor}}" color-animation-duration="2000" color-animation-timing-func="easeIn" />
 </page-meta>
 
-<view>
-
-  <button bindtap="showActionSheet">alert tap menus in bottom</button>
+<self-info></self-info>
+<view class="take_survey">
+  <view class="caption">
+    <label>Do surveys earn points!</label>
+    <label class="attention">100 Point coins = 10 CNY </label>
+    <button bindtap="showActionSheet" class=".btn_normal">Take Survey</button>
+  </view>
+</view>
+<view class="dashboard">
+  <view class="profile icons entry" data-tabIndex="1" bindtap="gotoTab"></view>
+  <view class="cashout icons entry" data-tabIndex="3" bindtap="gotoTab"></view>
+  <view class="completed icons entry" data-tabIndex="2" bindtap="gotoTab"></view>
+  <view class="faq icons entry" data-tabIndex="4" bindtap="gotoTab"></view>
 </view>
 
 <action-sheet hidden="{{actionsheethidden}}">
@@ -31,4 +41,4 @@
   </action-sheet-cancel> -->
 
 </action-sheet>
-<tabBar></tabBar>
+<overlay show="{{showOverlay}}"></overlay>

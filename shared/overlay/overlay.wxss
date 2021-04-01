@@ -1,0 +1,15 @@
+/* shared/overlay/overlay.wxss */
+
+.overlay{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+.hidden{
+  display: none;
+}

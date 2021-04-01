@@ -1,0 +1,10 @@
+<view class="bullet_row">
+  <image style="display:{{showIcon?'':'none'}}" src="{{icon}}"></image>
+  <view class="texts">
+    <label>{{subject}}</label>
+    <label class="small_grey">{{caption}}</label>
+  </view>
+  <view class="arrow">
+    >
+  </view>
+</view>

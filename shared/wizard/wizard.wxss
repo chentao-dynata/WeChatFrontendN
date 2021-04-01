@@ -1,0 +1,20 @@
+/* shared/wizard/wizard.wxss */
+
+.wizard{
+  display: block;
+  margin:0 auto;
+}
+
+.wizard label {
+  display: inline-block;
+  width: 2vh;
+  height: 2vh;
+  background-color:white;
+  border-radius:1vh;
+  margin:2vh 5vh 0 5vh;
+}
+
+.wizard .ring{
+  border:0.1px solid white;
+  background-color: rgb(60, 135, 198);
+}
