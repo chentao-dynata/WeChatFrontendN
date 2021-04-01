@@ -5,7 +5,8 @@ Page({
    * Page initial data
    */
   data: {
-    tabIndex:0
+    tabIndex:0,
+    selectArray:['1','2','3']
   },
 
   /**

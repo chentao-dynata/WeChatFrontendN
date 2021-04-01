@@ -12,7 +12,7 @@
   </view>
   <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
     <bullet-row icon="" subject="General Information" caption="This works this way"></bullet-row>
-    <select popArray="1,2,3"></select>
+    <select popArray="{{selectArray}}"></select>
 
   </view>
 
