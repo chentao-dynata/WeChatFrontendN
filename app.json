@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/postPageProfile/postPageProfile",
+    "pages/loading/loading",
+    "pages/noNetwork/noNetwork",
     "pages/authroize/authroize",
+    "pages/postPageProfile/postPageProfile",
     "pages/joinPrePage/joinPrePage",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/postPageFAQ/postPageFAQ",
     "pages/homePage/homePage",
     "pages/postPageCashout/postPageCashout",
-    "pages/noNetwork/noNetwork",
     "pages/joinPrePageEmail/joinPrePageEmail",
     "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",
     "pages/login/login",

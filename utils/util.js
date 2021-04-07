@@ -18,8 +18,13 @@ function subTen(value) {
   return  value < 10 ? ('0' + value) : value;
 }
 
+const validateEmail = email => {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
 
 module.exports = {
   formatTime,
-  subTen
+  subTen,
+  validateEmail: validateEmail
 }

@@ -1,90 +1,35 @@
-const app=getApp()
+const app = getApp();
+const service = app.service;
+const translation = app.translation;
 
-// pages/authroize/authroize.js
 Page({
-
-  /**
-   * Page initial data
-   */
   data: {
-
+    translation
   },
+  bindGetUserInfo(e) {
+    wx.showLoading({
+      title: 'Loading',
+    });
 
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
+    const info = e.detail.userInfo;
+    console.log(e.detail.userInfo)
+    console.log(e.detail)
+    service.set('weChatAuthorized', true);
+    service.set('avatarUrl', info.avatarUrl);
+    service.set('city', info.city);
+    service.set('country', info.country);
+    service.set('gender', info.gender);
+    service.set('language', info.language);
+    service.set('nickName', info.nickName);
+    service.set('province', info.province);
 
+    console.log('service from autth:', service)
+    wx.hideLoading();
+    wx.redirectTo({
+      url: '../login/login',
+    });
   },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
-  },
-  getUserInfo(e) {
-    // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-    console.log(e)
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-    app.globalData.userInfo=e.detail.userInfo
-    console.log(app.globalData)
-    //navigate to login page?
-    wx.navigateTo({
-      // url: '/pages/noNetwork/noNetwork?url='+encodeURI('/pages/login/login')
-      url: '/pages/login/login'
-    })
-  },
-  cancelAuthorize:function () {
-    var pages=getCurrentPages()
-    console.log(pages)
-    // wx.navigateBack({
-    //   delta: 1,
-    // })
+  onPullDownRefresh() {
+    wx.stopPullDownRefresh()
   }
-})
+});

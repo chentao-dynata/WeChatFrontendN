@@ -3,5 +3,5 @@
   <navigation-bar title="No Network" />
 </page-meta>
 <view class="no_network">
-  <button bindtap="btnReconnectTap" class="app-button app-button-red">Reconnect</button>
+  <button bindtap="reload" class="app-button">Reconnect</button>
 </view>

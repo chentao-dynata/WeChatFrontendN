@@ -1,0 +1,4 @@
+<view class='loading center'>
+  <view class='happypiggy'></view>
+  <div>下载中…</div>
+</view>
