@@ -1,5 +1,6 @@
 // shared/logged-in-header/logged-in-header.js
 const app = getApp()
+
 Component({
   /**
    * Component properties
@@ -21,12 +22,12 @@ Component({
   },
   lifetimes: {
     ready() {
-      console.log(app)
-      const userInfo = app.globalData.userInfo
-      if (userInfo)
+      const app = getApp();
+      const service = app.service;
+      if (service)
         this.setData({
-          photo: userInfo.avatarUrl,
-          nickName: 'Man'//userInfo.nickName
+          photo: service.get('avatarUrl'),
+          nickName: 'Man' //userInfo.nickName
         })
     }
   }

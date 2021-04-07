@@ -8,7 +8,7 @@ Page({
     showOverlay: 'false'
   },
   onLoad() {
-    console.log(app.globalData)
+
     this.setData({
       nbTitle: 'HomePage',
       nbLoading: true,
@@ -17,8 +17,7 @@ Page({
       menu1: "menu1",
       menu2: "menu2",
       menu3: "menu3",
-      actionsheethidden: true,
-      photo: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : ''
+      actionsheethidden: true
     })
   },
 
