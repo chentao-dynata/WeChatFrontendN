@@ -9,8 +9,6 @@
     "pages/postPageFAQ/postPageFAQ",
     "pages/homePage/homePage",
     "pages/postPageCashout/postPageCashout",
-    "pages/joinPrePageEmail/joinPrePageEmail",
-    "pages/joinPrePageVerifyCode/joinPrePageVerifyCode",
     "pages/login/login",
     "pages/test/test"
   ],

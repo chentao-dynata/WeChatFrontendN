@@ -42,3 +42,16 @@
   border-top-left-radius: 3vh;
   border-bottom-right-radius: 3vh;
 }
+.pre_form label{
+  color:white;
+  margin:1vh auto;
+  font-size: 25rpx;
+  display: block;
+}
+.pre_form navigator{
+  color:white;
+  text-decoration:underline;
+}
+.hidden{
+  display: none;
+}

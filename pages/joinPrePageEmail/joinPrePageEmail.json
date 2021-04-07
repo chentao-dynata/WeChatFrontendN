@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "page-header":"/shared/page-header/page-header",
-    "wizard": "/shared/wizard/wizard"
-  }
-}

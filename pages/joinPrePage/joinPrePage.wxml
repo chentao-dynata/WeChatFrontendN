@@ -8,7 +8,7 @@
   <label class="content">More surveys will be assigned by filling in the info below. Meaning more chance to earn points!
   </label>
 </view>
-<view class="container pre_form">
+<view class="container pre_form {{step==1?'':'hidden'}}">
   <datepicker Holder="Enter your date of birth" SelectedValue="{{birthday}}" bindChangeExternal="pickerChangeBirthday">
   </datepicker>
   <arraypicker array="{{education}}" holder="{{educationSelected}}" bindchangeExternal="pickerChangeEducation"></arraypicker>
@@ -16,4 +16,25 @@
   <arraypicker array="{{employmentStatus}}" holder="{{employmentSelected}}" bindchangeExternal="pickerChangeEmploymentStatus" ></arraypicker>
   <button class="btn" bindtap="gotoJoinSendEmail">Next</button>
   <wizard ringIndex="1"></wizard>
+</view>
+
+<view class="container pre_form {{step==2?'':'hidden'}}">
+  <input type="text" placeholder="Enter your email" />
+  <view>
+    <label for="">
+      You will receive a verification code in your email
+    </label>
+    <button class="btn" bindtap="gotoJoinVerifyCode">Next</button>
+  </view>
+  <wizard ringIndex="0"></wizard>
+</view>
+
+<view class="container pre_form {{step==3?'':'hidden'}}">
+  <label for="">
+    The verification code was sent to {{}}
+  </label>
+  <input type="text" placeholder="Enter verification code" />
+  <button class="btn" bindtap="gotoHomePage">Confirm</button>
+  <label bindtap="setStep2">Resend code</label>
+
 </view>

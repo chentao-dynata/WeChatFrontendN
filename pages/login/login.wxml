@@ -12,7 +12,7 @@
   <button class="btn btna" bindtap="gotoHomePage">Login</button>
   <view>
     <label for="">Forgot password?(Link to website)</label>
-    <label class="owsitelink" for="">http://www.opinionworld.com.au/en-au/general/forgot-password</label>
+    <navigator url="http://www.opinionworld.com.au/en-au/general/forgot-password" class="owsitelink">http://www.opinionworld.com.au/en-au/general/forgot-password</navigator>
   </view>
 </view>
 <view class="join">

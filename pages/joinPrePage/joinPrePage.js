@@ -5,6 +5,7 @@ Page({
    * Page initial data
    */
   data: {
+    step:1,
     birthday: '',
     education: ['Incomplete Secondary Education', 'Secondary Education Completed', 'Some University or Vocational Cert', 'Vocational or Professinal Credential. completed', 'Undergraduate Education Completed', 'Postgraduate Education Completed', 'Doctorate,Post-doctorate', 'Prefer not to answer'],
     educationSelected: 'Select your education',
@@ -75,12 +76,28 @@ Page({
   onShareAppMessage: function () {
 
   },
-  gotoJoinSendEmail: function () {
-    const t = this
-    console.log(t.data)
-    wx.navigateTo({
-      url: '/pages/joinPrePageEmail/joinPrePageEmail',
+  gotoHomePage(){
+    wx.switchTab({
+      url: '/pages/homePage/homePage',
     })
+  },
+  setStep2(){
+    this.setData({step:2})
+  },
+  gotoJoinVerifyCode(){
+    this.setData({
+      step:3
+    })
+  },
+  gotoJoinSendEmail: function () {
+    this.setData({
+      step:2
+    })
+    // const t = this
+    // console.log(t.data)
+    // wx.navigateTo({
+    //   url: '/pages/joinPrePageEmail/joinPrePageEmail',
+    // })
   },
   pickerChangeBirthday(e) {
     this.setData({
