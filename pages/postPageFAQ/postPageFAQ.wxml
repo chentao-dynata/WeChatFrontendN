@@ -8,7 +8,7 @@
     bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
 </view>
 <view class="ow_container general_info" style="margin:50rpx auto;">
-  <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
+  <view class="faq ow_container {{tabIndex==0?'show':'hidden'}}">
     <bullet-row icon="" subject="General Information" caption="How does it all work"></bullet-row>
     <bullet-row icon="" subject="Your account" caption="Verification, passwords, balance..."></bullet-row>
     <bullet-row icon="" subject="Surveys" caption="How do surveys work?"></bullet-row>

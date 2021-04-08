@@ -2,14 +2,14 @@
 
 /* shared/icon-style-list-item/ow-styled-list-item.wxss */
 .bullet_row{
-  border: 1px solid rgb(233, 237, 238);
+  border: 1rpx solid rgb(233, 237, 238);
   display: flex;
   flex-direction: row;
   vertical-align: middle;
-  height: 6vh;
+  min-height: 6vh;
   justify-content:space-between;
   font-size: 28rpx;
-  box-shadow: 1px 1px 1px #888888;
+  box-shadow: 1rpx 1rpx 1rpx #888888;
 }
 
 .bullet_row .texts {
