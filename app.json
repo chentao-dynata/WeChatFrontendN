@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/postPageCashout/postPageCashout",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/postPageProfile/postPageProfile",
     "pages/homePage/homePage",
@@ -8,7 +9,6 @@
     "pages/authorize/authorize",
     "pages/join/join",
     "pages/postPageFAQ/postPageFAQ",
-    "pages/postPageCashout/postPageCashout",
     "pages/login/login",
     "pages/test/test"
   ],
