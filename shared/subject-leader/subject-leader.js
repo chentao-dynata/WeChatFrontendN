@@ -24,7 +24,6 @@ Component({
       type: Number,
       value: 0,
       observer: function (a, b, c) {
-        console.log(a, b, c)
         let t = this
         t.setData({
           tabIndex: a,

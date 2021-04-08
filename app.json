@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/postPageProfile/postPageProfile",
     "pages/homePage/homePage",
     "pages/loading/loading",
     "pages/noNetwork/noNetwork",
     "pages/authorize/authorize",
-    "pages/postPageProfile/postPageProfile",
     "pages/join/join",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/postPageFAQ/postPageFAQ",

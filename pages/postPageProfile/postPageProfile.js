@@ -1,4 +1,10 @@
 // pages/postPageProfile/postPageProfile.js
+
+const app = getApp();
+const service = app.service;
+const translation = app.translation;
+const legal = app.legal;
+
 Page({
 
   /**
@@ -10,13 +16,26 @@ Page({
     'birthday': '01-01-2000',
     'email': 'chen.tao@dynata.com',
     'province': 'Guangdong',
-    'city': 'Guangzhou'
+    'city': 'Guangzhou',
+    translation,
+    legal,
+    points: service.get('points')
   },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    this.initFields();
+  },
+  initFields() {
+    let self = this;
+    self.setData({
+      birthDate: service.get('birthDate') || '',
+      city: service.get('city') || '',
+      email: service.get('email') || '',
+      province: service.get('province') || '',
+      respondentName: service.get('respondentName') || '',
+    })
   },
 
   /**
@@ -30,7 +49,16 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    if (this.data.points == null) {
+      this.setData({
+        points: service.get('points')
+      })
+    } else if (this.data.points !== service.get('points') && (service.get('points') !== null)) {
+      console.log('updating profile points...')
+      this.setData({
+        points: service.get('points')
+      })
+    }
   },
 
   /**
@@ -51,7 +79,8 @@ Page({
    * Page event handler function--Called when user drop down
    */
   onPullDownRefresh: function () {
-
+    this.initFields();
+    wx.stopPullDownRefresh();
   },
 
   /**
