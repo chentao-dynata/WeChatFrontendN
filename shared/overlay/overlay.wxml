@@ -1,4 +1,4 @@
 <!--shared/overlay/overlay.wxml-->
-<view class="overlay {{show=='true'?'':'hidden'}}">
+<view class="overlay {{show?'':'hidden'}}">
   
 </view>

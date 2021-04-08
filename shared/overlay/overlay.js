@@ -5,8 +5,8 @@ Component({
    */
   properties: {
     show:{
-      type:String,
-      value:''
+      type:Boolean,
+      value:false
     }
   },
 

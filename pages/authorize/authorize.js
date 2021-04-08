@@ -1,23 +1,18 @@
-// pages/postPageTakeSurvey/postPageTakeSurvey.js
-const app=getApp()
+// pages/authorize/authorize.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    tabIndex:0
+
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    console.log(app.surveyTabIndex)
-    this.setData({
-      tabIndex:app.surveyTabIndex
-    })
-    app.surveyTabIndex=null
+
   },
 
   /**
@@ -67,11 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  onSpotlightSwitch(e) {
-    this.setData({
-      tabIndex: e.detail
-    })
   }
-
 })

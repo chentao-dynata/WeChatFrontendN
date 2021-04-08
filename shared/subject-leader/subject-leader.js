@@ -4,9 +4,9 @@ Component({
    * Component properties
    */
   properties: {
-    smashSubject:{
-      type:Boolean,
-      value:false
+    smashSubject: {
+      type: Boolean,
+      value: false
     },
     subject: {
       type: 'String',
@@ -20,6 +20,10 @@ Component({
       type: 'String',
       value: ''
     },
+    activeIndex: {
+      type: Number,
+      value: 0
+    }
   },
 
   /**
@@ -35,12 +39,22 @@ Component({
   methods: {
     shuffleSpotlight(e) {
       let index = e.target.dataset.ordinal
-      let t=this
+      let t = this
       this.setData({
         spotlightIndex: index,
-        subject:index==0?t.data.item1:t.data.item2
+        subject: index == 0 ? t.data.item1 : t.data.item2
       })
       this.triggerEvent("onSpotlightSwitch", index)
+    }
+  },
+  lifetimes: {
+    ready() {
+      let t = this
+      let index = t.properties.activeIndex
+      t.setData({
+        spotlightIndex: index,
+        subject: index == 0 ? t.data.item1 : t.data.item2
+      })
     }
   }
 })

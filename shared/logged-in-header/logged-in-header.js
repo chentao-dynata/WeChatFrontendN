@@ -24,6 +24,7 @@ Component({
     ready() {
       const app = getApp();
       const service = app.service;
+      console.log(service)
       if (service)
         this.setData({
           photo: service.get('avatarUrl'),

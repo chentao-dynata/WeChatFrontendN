@@ -1,13 +1,20 @@
 // pages/homePage/homePage.js
 const app = getApp()
+const service = app.service;
+const translation = app.translation;
+
 Page({
 
   data: {
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
-    showOverlay: 'false'
+    loading: false,
+    translation,
+    points: service.get('points')
   },
   onLoad() {
+    console.log('onLoad homepage...')
+    app.getPoints();
 
     this.setData({
       nbTitle: 'HomePage',
@@ -25,14 +32,52 @@ Page({
    * Lifecycle function--Called when page is initially rendered
    */
   onReady: function () {
+    console.log('onReady homepage....')
+    console.log('homepage points: ', this.data.points);
+    console.log('service points: ', service.get('points'))
+    console.log(this.data.points)
+    if (this.data.points == null) {
+      let start = Date.now()
+      console.log('points is null, running loop...')
+      for (let i = 0; i < 3; i++) {
+        console.log('loop round ' + i)
+        setTimeout(() => {
+          if (this.data.points == null) {
+            this.setData({
+              points: service.get('points')
+            })
+            console.log('time: ', Date.now() - start + 'ms');
+          } else {
+            console.log('not null anymore')
+          }
+        }, 500)
+      }
 
+    } else if (this.data.points !== service.get('points') && (service.get('points') !== null)) {
+      console.log('updating homepage points on first render...')
+      this.setData({
+        points: service.get('points')
+      })
+    }
   },
 
   /**
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    console.log('onShow homepage....')
+    console.log('homepage points: ', this.data.points);
+    console.log('service points: ', service.get('points'))
+    if (this.data.points == null) {
+      this.setData({
+        points: service.get('points')
+      })
+    } else if (this.data.points !== service.get('points') && (service.get('points') !== null)) {
+      console.log('updating homepage points...')
+      this.setData({
+        points: service.get('points')
+      })
+    }
   },
 
   /**
@@ -79,7 +124,7 @@ Page({
     // })
     this.setData({
       actionsheethidden: false,
-      showOverlay: 'true'
+      loading: true
     })
     wx.showLoading({
       title: 'wait...',
@@ -96,12 +141,13 @@ Page({
     })
   },
   bindmenu3() {
+    let t = this
     this.setData({
       actionsheethidden: true,
-      showOverlay: 'false'
+      loading: false
     })
     wx.hideLoading({
-      success: (res) => {},
+      success: (res) => {}
     })
   },
   gotoTab(e) {
@@ -136,9 +182,10 @@ Page({
           duration: 3000
         })
 
+
         setTimeout(() => {
           wx.switchTab({
-            url: tabUrls[i - 1]
+            url: tabUrls[2]
           })
         }, 3000);
         return
@@ -146,8 +193,28 @@ Page({
 
       if (!infoIsComplete) return
     }
+
+    let destUrl = tabUrls[i - 1]
+    if (i == 2) {
+      app.surveyTabIndex=1
+      wx.switchTab({
+        url: destUrl,
+        success(e){
+          let page=getCurrentPages().pop()
+          if(page==undefined||page==null)return
+          page.onLoad()
+        }
+      })
+      return
+    }
+
     wx.switchTab({
-      url: tabUrls[i - 1]
+      url: destUrl
+    })
+  },
+  gotoSurvey() {
+    wx.switchTab({
+      url: '/pages/postPageTakeSurvey/postPageTakeSurvey',
     })
   }
 })

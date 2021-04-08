@@ -8,7 +8,7 @@
   <view class="caption">
     <label>Do surveys earn points!</label>
     <label class="attention">100 Point coins = 10 CNY </label>
-    <button bindtap="showActionSheet" class=".btn_normal">Take Survey</button>
+    <button bindtap="gotoSurvey" class=".btn_normal">Take Survey</button>
   </view>
 </view>
 <view class="dashboard">
@@ -41,4 +41,4 @@
   </action-sheet-cancel> -->
 
 </action-sheet>
-<overlay show="{{showOverlay}}"></overlay>
+<overlay show="{{loading}}"></overlay>

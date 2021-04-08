@@ -7,15 +7,34 @@
   <label>Are you already an existing OpinionWOrld member?</label>
   <datetimepicker id="date-time-picker" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel">
   </datetimepicker>
-  <input placeholder="Enter your email" value="{{username}}" />
-  <input placeholder="Enter your password" />
-  <button class="btn btna" bindtap="gotoHomePage">Login</button>
+  <input
+          type="email"
+          class="emailInput"
+          placeholder-class="phcolor"
+          placeholder="{{translation.enterEmail}}"
+          bindchange='bindEmailChange'
+          value="{{email}}"
+          disabled='{{loading}}'
+        />
+  <input
+          type="password"
+          class="pawwsord"
+          placeholder-class="phcolor"
+          placeholder="{{translation.enterPassword}}"
+          bindchange='bindPasswordChange'
+          bindblur='bindPasswordChange'
+          value="{{password}}"
+          disabled='{{loading}}'
+        />
+  <button class="btn btna" bindtap="completeLogin">Login</button>
   <view>
     <label for="">Forgot password?(Link to website)</label>
-    <navigator url="http://www.opinionworld.com.au/en-au/general/forgot-password" class="owsitelink">http://www.opinionworld.com.au/en-au/general/forgot-password</navigator>
+    <navigator url="http://www.opinionworld.com.au/en-au/general/forgot-password" class="owsitelink">
+      http://www.opinionworld.com.au/en-au/general/forgot-password</navigator>
   </view>
 </view>
 <view class="join">
   <label>Not a member yet?</label>
   <button class="joinbtn" bindtap="gotojoinflow">Join Now</button>
 </view>
+<overlay show="{{loading}}"></overlay>
