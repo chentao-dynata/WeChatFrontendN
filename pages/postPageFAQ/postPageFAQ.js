@@ -1,12 +1,30 @@
 // pages/postPageFAQ/postPageFAQ.js
+
+const app = getApp();
+const service = app.service;
+const config = require('../../config.js');
+const translation = app.translation;
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    tabIndex:0,
-    selectArray:['1','2','3']
+    tabIndex: 0,
+    selectArray: [translation.questionWebsite, translation.questionReg, translation.questionSurveyPoints, translation.questionSurvey, translation.questionReward, translation.questionLogin, translation.questionAccount, translation.questionUnsubscribe, translation.questionPartnerApp],
+    general: '',
+    account: '',
+    surveys: '',
+    redeem: '',
+    translation,
+    points: service.get('points'),
+    select: false,
+    tihuoWay: '选择相关主题',
+    textarea: null,
+    writing: true,
+    sent: false,
+    length: 700
   },
 
   /**
@@ -64,10 +82,10 @@ Page({
   onShareAppMessage: function () {
 
   },
-  onSpotlightSwitch(e){
+  onSpotlightSwitch(e) {
     this.setData({
-      tabIndex:e.detail
+      tabIndex: e.detail
     })
   }
-  
+
 })

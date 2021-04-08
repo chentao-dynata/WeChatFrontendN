@@ -4,16 +4,33 @@
 </page-meta>
 <self-info></self-info>
 <view class="ow_container" style="padding:5vh 0 0 0;">
-  <subject-leader activeIndex="{{tabIndex}}" smashSubject="true" subject="FAQ" item1="FAQ" item2="Contact Us" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
+  <subject-leader activeIndex="{{tabIndex}}" smashSubject="true" subject="FAQ" item1="FAQ" item2="Contact Us"
+    bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
 </view>
 <view class="ow_container general_info" style="margin:50rpx auto;">
   <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
     <bullet-row icon="" subject="General Information" caption="How does it all work"></bullet-row>
+    <bullet-row icon="" subject="Your account" caption="Verification, passwords, balance..."></bullet-row>
+    <bullet-row icon="" subject="Surveys" caption="How do surveys work?"></bullet-row>
+    <bullet-row icon="" subject="Redeem" caption="How do I get money?"></bullet-row>
   </view>
   <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
-    <bullet-row icon="" subject="General Information" caption="This works this way"></bullet-row>
-    <select popArray="{{selectArray}}"></select>
- 
+    <label>
+      Please fill in the information below. We will review all the questions and respond as soon as possible.
+    </label>
+    <label>Subject:</label>
+    <select popArray="{{selectArray}}" theVal="Select a revelant topic"></select>
+    <label>
+      Message:(If you cannot find in the revelant topic)
+    </label>
+    <textarea class="msgInput" maxlength="700">
+
+    </textarea>
+    <button class='btnA' bindtap="sendMessage" form-type="submit">
+      {{translation.submit}}
+    </button>
+
+
   </view>
 
 </view>
