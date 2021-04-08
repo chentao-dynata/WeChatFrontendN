@@ -22,7 +22,16 @@ Component({
     },
     activeIndex: {
       type: Number,
-      value: 0
+      value: 0,
+      observer: function (a, b, c) {
+        console.log(a, b, c)
+        let t = this
+        t.setData({
+          tabIndex: a,
+          subject:a==0?t.properties.item1:t.properties.item2
+        })
+
+      }
     }
   },
 
@@ -30,7 +39,7 @@ Component({
    * Component initial data
    */
   data: {
-    spotlightIndex: 0
+    tabIndex: 0
   },
 
   /**
@@ -42,19 +51,9 @@ Component({
       let t = this
       this.setData({
         spotlightIndex: index,
-        subject: index == 0 ? t.data.item1 : t.data.item2
+        subject: index == 0 ? t.properties.item1 : t.properties.item2
       })
       this.triggerEvent("onSpotlightSwitch", index)
-    }
-  },
-  lifetimes: {
-    ready() {
-      let t = this
-      let index = t.properties.activeIndex
-      t.setData({
-        spotlightIndex: index,
-        subject: index == 0 ? t.data.item1 : t.data.item2
-      })
     }
   }
 })

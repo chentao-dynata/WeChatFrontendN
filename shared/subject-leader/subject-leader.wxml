@@ -2,8 +2,8 @@
 <view class="subject">
   <text style="display:{{smashSubject?'none':''}}">{{subject}}</text>
   <view class="row">
-    <button bindtap="shuffleSpotlight" data-ordinal="0" class="{{spotlightIndex==0?'spotlight':''}}">{{item1}}</button>
+    <button bindtap="shuffleSpotlight" data-ordinal="0" class="{{tabIndex==0?'spotlight':''}}">{{item1}}</button>
     <view class="splitter"></view>
-    <button bindtap="shuffleSpotlight" data-ordinal="1"  class="{{spotlightIndex==1?'spotlight':''}}">{{item2}}</button>
+    <button bindtap="shuffleSpotlight" data-ordinal="1"  class="{{tabIndex==1?'spotlight':''}}">{{item2}}</button>
   </view>
 </view>

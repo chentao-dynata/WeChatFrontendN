@@ -213,8 +213,14 @@ Page({
     })
   },
   gotoSurvey() {
+    app.surveyTabIndex=0
     wx.switchTab({
       url: '/pages/postPageTakeSurvey/postPageTakeSurvey',
+        success(e){
+          let page=getCurrentPages().pop()
+          if(page==undefined||page==null)return
+          page.onLoad()
+        }
     })
   }
 })
