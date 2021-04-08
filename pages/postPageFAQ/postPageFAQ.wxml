@@ -15,20 +15,25 @@
     <bullet-row icon="" subject="Redeem" caption="How do I get money?"></bullet-row>
   </view>
   <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
-    <label>
-      Please fill in the information below. We will review all the questions and respond as soon as possible.
-    </label>
-    <label>Subject:</label>
-    <select popArray="{{selectArray}}" theVal="Select a revelant topic"></select>
-    <label>
-      Message:(If you cannot find in the revelant topic)
-    </label>
-    <textarea class="msgInput" maxlength="700">
+    <view wx:if="{{!sent}}" class="contact_form {{!sent?'':'hidden'}}">
+      <label>
+        Please fill in the information below. We will review all the questions and respond as soon as possible.
+      </label>
+      <label>Subject:</label>
+      <select popArray="{{selectArray}}" theVal="Select a revelant topic"></select>
+      <label>
+        Message:(If you cannot find in the revelant topic)
+      </label>
+      <textarea class="msgInput" maxlength="700">
 
     </textarea>
-    <button class='btnA' bindtap="sendMessage" form-type="submit">
-      {{translation.submit}}
-    </button>
+      <button class='btnA' bindtap="sendMessage" form-type="submit">
+        {{translation.submit}}
+      </button>
+    </view>
+    <view wx:if="{{sent}}" class="sent_tab">
+      Your message has been sent.
+    </view>
 
 
   </view>

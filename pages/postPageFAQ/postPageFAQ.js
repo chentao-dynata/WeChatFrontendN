@@ -86,6 +86,21 @@ Page({
     this.setData({
       tabIndex: e.detail
     })
+  },
+  sendMessage() {
+    const t = this
+
+    t.setData({
+      sent: true
+    })
+
+    setTimeout(() => {
+      t.setData({
+        sent: false
+      })
+    }, 3000);
+
+
   }
 
 })

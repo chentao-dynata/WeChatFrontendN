@@ -1,6 +1,6 @@
 /* pages/postPageFAQ/postPageFAQ.wxss */
 
-.general_info{
+.general_info {
   width: 90%;
 }
 
@@ -26,4 +26,30 @@
   width: 65%;
   padding: 5px;
   margin: 3% auto;
+}
+
+.sent_tab {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 6vh;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contact_form label{
+  display: block;
+  font-weight: bold;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+}
+select{
+  margin: 0 0 0 1.5%;
+  width: 96%;
+}
+bullet-row{
+  margin-top: 15rpx;
 }
