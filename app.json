@@ -1,18 +1,17 @@
 {
   "pages": [
+    "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/postPageProfile/postPageProfile",
     "pages/loading/loading",
     "pages/noNetwork/noNetwork",
     "pages/postPageFAQ/postPageFAQ",
     "pages/auth/auth",
     "pages/postPageCashout/postPageCashout",
-    "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/homePage/homePage",
     "pages/join/join",
     "pages/login/login",
-    "pages/navigator/navigator",
-    "pages/test/test"
-  ],
+    "pages/navigator/navigator" 
+   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

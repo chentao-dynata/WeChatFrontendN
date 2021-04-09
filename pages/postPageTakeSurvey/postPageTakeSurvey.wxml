@@ -4,11 +4,16 @@
 </page-meta>
 <self-info></self-info>
 <view class="ow_container" style="padding:3vh 0 0 0;">
-  <subject-leader activeIndex="{{tabIndex}}" subject="Survey" item1="Survey" item2="Completed Surveys" bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
+  <subject-leader activeIndex="{{tabIndex}}" subject="Survey" item1="Survey" item2="Completed Surveys"
+    bindonSpotlightSwitch="onSpotlightSwitch"></subject-leader>
 </view>
 <view class="ow_container general_info" style="margin:20rpx auto;">
   <view class="ow_container {{tabIndex==0?'show':'hidden'}}">
     <survey-item surveyName='survey'></survey-item>
+    <view wx:if="{{surveyList.length > 0}}" wx:for="{{surveyList}}" wx:for-item="survey" wx:key="key"
+      wx:for-index="index">
+      <survey-item surveyName='survey'></survey-item>
+    </view>
   </view>
   <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
     <survey-item hisMod="true" surveyName='history survey'></survey-item>

@@ -4,14 +4,24 @@ Component({
    * Component properties
    */
   properties: {
-    hisMod:{
-      type:Boolean,
-      value:false
+    hisMod: {
+      type: Boolean,
+      value: false
     },
-    surveyName:{
-      type:String,
-      value:''
-    }
+    surveyName: {
+      type: String,
+      value: ''
+    },
+    survey: {
+      type: Object,
+      value: {}
+    },
+    translation: {
+      type: Object,
+      value: {}
+    },
+
+
   },
 
   /**
