@@ -34,7 +34,7 @@ Page({
             } else {
               console.log('loading.js - wechat not authorized')
               wx.redirectTo({
-                url: '../authroize/authroize'
+                url: '../authorize/authroize'
               });
             }
           }

@@ -15,7 +15,7 @@ Component({
         const isRefresh = a == '' && b != ''
         if (isRefresh)
           this.setData({
-            selectedDate: ''
+            selectedDate: '' 
           })
       }
     }
