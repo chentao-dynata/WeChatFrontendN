@@ -5,17 +5,17 @@
 <self-info></self-info>
 <view class="ow_container">
   <view class="name_mobile">
-    <icon-row iconIndex="0" bindiconRowBlur='profileFieldBlur' subject="Nick Name" caption="Edit your nick name">
+    <icon-row iconIndex="0" bindiconRowBlur='profileFieldBlur' subject="{{respondentName}}" caption="Edit your nick name">
     </icon-row>
     <icon-row iconIndex="1" bindiconRowBlur='profileFieldBlur' subject="Mobile Number"
       caption="Edit your mobile number"></icon-row>
 
   </view>
   <view class="profile_etc">
-    <icon-row iconIndex="2" bindiconRowBlur='profileFieldBlur' subject="01-01-2000"></icon-row>
-    <icon-row iconIndex="3" bindiconRowBlur='profileFieldBlur' subject="chen.tao@dynata.com"></icon-row>
-    <icon-row iconIndex="4" bindiconRowBlur='profileFieldBlur' subject="Guangdong" caption="Edit your province">
+    <icon-row iconIndex="2" bindiconRowBlur='profileFieldBlur' subject="{{birthDate}}"></icon-row>
+    <icon-row iconIndex="3" bindiconRowBlur='profileFieldBlur' subject="{{email}}"></icon-row>
+    <icon-row iconIndex="4" bindiconRowBlur='profileFieldBlur' subject="{{province}}" caption="Edit your province">
     </icon-row>
-    <icon-row iconIndex="5" bindiconRowBlur='profileFieldBlur' subject="Guangzhou" caption="Edit your city"></icon-row>
+    <icon-row iconIndex="5" bindiconRowBlur='profileFieldBlur' subject="{{city}}" caption="Edit your city"></icon-row>
   </view>
 </view>

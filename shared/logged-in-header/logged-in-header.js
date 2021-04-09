@@ -1,5 +1,7 @@
 // shared/logged-in-header/logged-in-header.js
-const app = getApp()
+const app = getApp();
+const service = app.service;
+const translation = app.translation;
 
 Component({
   /**
@@ -12,7 +14,13 @@ Component({
   /**
    * Component initial data
    */
-  data: {},
+  data: {
+    points: service.get('points')||0,
+    avatarUrl: service.get('avatarUrl'),
+    translation,
+    respondentName: service.data.respondentName,
+    nickName: service.data.nickName
+  },
 
   /**
    * Component methods

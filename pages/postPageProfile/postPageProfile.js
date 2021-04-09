@@ -35,6 +35,7 @@ Page({
       email: service.get('email') || '',
       province: service.get('province') || '',
       respondentName: service.get('respondentName') || '',
+      province: service.get('province') || ''
     })
   },
 

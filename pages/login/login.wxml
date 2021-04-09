@@ -5,27 +5,11 @@
 <page-header></page-header>
 <view class="login_form">
   <label>Are you already an existing OpinionWOrld member?</label>
-  <datetimepicker id="date-time-picker" bind:bindMultiPickerChange="bindMultiPickerChange" bind:bindCancel="bindCancel">
-  </datetimepicker>
-  <input
-          type="email"
-          class="emailInput"
-          placeholder-class="phcolor"
-          placeholder="{{translation.enterEmail}}"
-          bindchange='bindEmailChange'
-          value="{{email}}"
-          disabled='{{loading}}'
-        />
-  <input
-          type="password"
-          class="pawwsord"
-          placeholder-class="phcolor"
-          placeholder="{{translation.enterPassword}}"
-          bindchange='bindPasswordChange'
-          bindblur='bindPasswordChange'
-          value="{{password}}"
-          disabled='{{loading}}'
-        />
+  <input type="email" class="emailInput" placeholder-class="phcolor" placeholder="{{translation.enterEmail}}"
+    bindchange='bindEmailChange' value="{{email}}" disabled='{{loading}}' />
+  <input type="password" class="pawwsord" placeholder-class="phcolor" placeholder="{{translation.enterPassword}}"
+    bindchange='bindPasswordChange' bindblur='bindPasswordChange' value="{{password}}" disabled='{{loading}}' />
+  <text class="warn" wx:if="{{error}}">{{translation.enterValidCredentials}} {{errorName}}</text>
   <button class="btn btna" bindtap="completeLogin">Login</button>
   <view>
     <label for="">Forgot password?(Link to website)</label>

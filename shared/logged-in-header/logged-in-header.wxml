@@ -7,12 +7,12 @@
     </view>
     <view class="info_field first">
       <label for="">{{nickName}}</label>
-      <label for="">ID:007</label>
+      <label for="">{{translation.userId}}: {{respondentId ? respondentId : 'Updating...'}}</label>
     </view>
   </view>
 
   <view class="info_field last">
     <label for="">Points</label>
-    <label for="">100</label>
+    <label for="">{{points}}</label>
   </view>
 </view>

@@ -1,4 +1,0 @@
-<!--shared/page-header/page-header.wxml-->
-<view class="page-header">
-  <image src="/img/OW_logo.png" />
-</view>

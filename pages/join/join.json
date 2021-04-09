@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "page-header":"/shared/page-header/page-header",
     "datepicker": "/shared/datepicker/datepicker",
     "arraypicker": "/shared/arrayPicker/arrayPicker",
     "wizard": "/shared/wizard/wizard"

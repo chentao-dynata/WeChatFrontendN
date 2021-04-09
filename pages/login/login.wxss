@@ -1,12 +1,12 @@
 /* pages/login/login.wxss */
 
-.login_form{
+.login_form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
   text-align: center;
-  height: 40vh; 
+  height: 40vh;
   width: 100%;
   background-color: rgb(42, 118, 184);
   color: white;
@@ -16,50 +16,58 @@
   padding-bottom: 4vh;
 }
 
-.login_form input{
+.login_form input {
   background-color: white;
-  border:1px solid grey;
+  border: 1px solid grey;
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
   height: 6vh;
-  color:black;
+  color: black;
 }
-.login_form button,.join button{
+
+.login_form button,
+.join button {
   background-color: rgb(42, 118, 184);
-  border:1px solid white;
+  border: 1px solid white;
   color: white;
   border-top-left-radius: 3vh;
   border-bottom-right-radius: 3vh;
 }
 
-.login_form label{
+.login_form label {
   display: block;
 }
 
-.login_form .owsitelink{
+.login_form .owsitelink {
   font-size: 10px;
 }
 
 
-.login_form .btn{
-  margin:2px auto;
+.login_form .btn {
+  margin: 2px auto;
   width: 80%;
 }
 
-.join{
+.join {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-} 
+}
 
-.join label{
+.join label {
   margin: 2vh auto;
   font-weight: bold;
 }
 
-.join .joinbtn{
+.join .joinbtn {
   background-color: red;
   width: 80%;
 }
 
+.warn {
+  background-color: #FFDEDE;
+  display: block;
+  padding: 10rpx;
+  color: #FF0000;
+}

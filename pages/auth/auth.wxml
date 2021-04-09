@@ -4,11 +4,7 @@
 </page-meta>
 <view class="container">
 
-  <!-- 
-  <page-header />
-  <view>
-    <image src="{{userInfo.avatarUrl}}" />
-  </view> -->
+
 
   <view class="actions">
     <label>
