@@ -1,0 +1,9 @@
+<view class='ow_container globalTextColor'>
+    <view class='infoBody'>
+        <view class='faqHeader' bindtap="goBack">
+          <i class='arrow left'></i>
+          <text class='infoTitle'>{{title}}</text>
+        </view>
+        <rich-text class='content' nodes="{{content}}"></rich-text>
+    </view>
+</view>

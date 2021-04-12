@@ -101,6 +101,13 @@ Page({
     }, 3000);
 
 
+  },
+  openPage(e) {
+    console.log(e)
+    let type = e.currentTarget.dataset.type;
+    wx.navigateTo({
+      url: '../info/info?type=' + type,
+    })
   }
 
 })

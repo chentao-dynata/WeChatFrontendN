@@ -1,0 +1,22 @@
+/* pages/info/info.wxss */
+
+.infoBody {
+  background: #fff;
+  padding: 5%;
+}
+
+.infoHeader{
+  padding-left: 5%;
+  width: 80%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 15px;
+}
+
+.infoTitle {
+color: #000;
+padding: 0 5%;
+}
+.content {
+padding: 5% 0;
+}

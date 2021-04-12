@@ -9,10 +9,10 @@
 </view>
 <view class="ow_container general_info" style="margin:50rpx auto;">
   <view class="faq ow_container {{tabIndex==0?'show':'hidden'}}">
-    <bullet-row icon="" subject="General Information" caption="How does it all work"></bullet-row>
-    <bullet-row icon="" subject="Your account" caption="Verification, passwords, balance..."></bullet-row>
-    <bullet-row icon="" subject="Surveys" caption="How do surveys work?"></bullet-row>
-    <bullet-row icon="" subject="Redeem" caption="How do I get money?"></bullet-row>
+    <bullet-row bindtap="openPage" data-type="general" subject="General Information" caption="How does it all work"></bullet-row>
+    <bullet-row bindtap="openPage" data-type='policy' subject="Your account" caption="Verification, passwords, balance..."></bullet-row>
+    <bullet-row bindtap="openPage" data-type='surveys' subject="Surveys" caption="How do surveys work?"></bullet-row>
+    <bullet-row bindtap="openPage" data-type='redeem' subject="Redeem" caption="How do I get money?"></bullet-row>
   </view>
   <view class="ow_container {{tabIndex==1?'show':'hidden'}}">
     <view wx:if="{{!sent}}" class="contact_form {{!sent?'':'hidden'}}">
