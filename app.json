@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/loading/loading",
     "pages/postPageFAQ/postPageFAQ",
     "pages/info/info",
-    "pages/loading/loading",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/postPageProfile/postPageProfile",
     "pages/noNetwork/noNetwork",
