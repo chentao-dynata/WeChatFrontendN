@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/loading/loading",
     "pages/homePage/homePage",
     "pages/login/login",
     "pages/join/join",
-    "pages/loading/loading",
     "pages/auth/auth",
     "pages/noNetwork/noNetwork",
     "pages/postPageFAQ/postPageFAQ",
