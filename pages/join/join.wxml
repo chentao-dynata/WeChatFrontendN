@@ -8,7 +8,7 @@
   <label class="content">More surveys will be assigned by filling in the info below. Meaning more chance to earn points!
   </label>
 </view>
-<view class="container pre_form {{step==1?'':'hidden'}}">
+<view class="container pre_form {{step==1?'':'hidden'}} ">
   <datepicker Holder="Enter your date of birth" SelectedValue="{{birthday}}" bindChangeExternal="pickerChangeBirthday">
   </datepicker>
   <arraypicker array="{{education}}" holder="{{educationSelected}}" bindchangeExternal="pickerChangeEducation"></arraypicker>
@@ -29,7 +29,7 @@
   <wizard ringIndex="0"></wizard>
 </view>
 
-<view class="container pre_form {{step==3?'':'hidden'}}">
+<view class="container pre_form {{step==3?'':'hidden'}} pigbg">
   <label for="">
     The verification code was sent to {{}}
   </label>

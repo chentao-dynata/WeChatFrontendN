@@ -1,7 +1,7 @@
 /* shared/logged-in-header/logged-in-header.wxss */
 
 .self_info{
-  height: 20vh;
+  height: 15vh;
   background-color: rgb(29, 106, 173);
   padding:8vh 2vh 0 4vh;
   display: flex;

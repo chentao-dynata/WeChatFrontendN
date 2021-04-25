@@ -1,16 +1,16 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/join/join",
+    "pages/homePage/homePage",
     "pages/loading/loading",
+    "pages/auth/auth",
+    "pages/noNetwork/noNetwork",
     "pages/postPageFAQ/postPageFAQ",
     "pages/info/info",
     "pages/postPageTakeSurvey/postPageTakeSurvey",
     "pages/postPageProfile/postPageProfile",
-    "pages/noNetwork/noNetwork",
-    "pages/auth/auth",
     "pages/postPageCashout/postPageCashout",
-    "pages/homePage/homePage",
-    "pages/join/join",
-    "pages/login/login",
     "pages/navigator/navigator" 
    ],
   "window": {

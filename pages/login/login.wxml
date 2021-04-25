@@ -17,7 +17,7 @@
       http://www.opinionworld.com.au/en-au/general/forgot-password</navigator>
   </view>
 </view>
-<view class="join">
+<view class="join joinnowpig">
   <label>Not a member yet?</label>
   <button class="joinbtn" bindtap="gotojoinflow">Join Now</button>
 </view>

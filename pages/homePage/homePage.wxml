@@ -4,14 +4,14 @@
 </page-meta>
 
 <self-info></self-info>
-<view class="take_survey">
+<view class="take_survey dashboardpig">
   <view class="caption">
     <label>Do surveys earn points!</label>
     <label class="attention">100 Point coins = 10 CNY </label>
     <button bindtap="gotoSurvey" class=".btn_normal">Take Survey</button>
   </view>
 </view>
-<view class="dashboard">
+<view class="dashboard ">
   <view class="profile icons entry" data-tabIndex="1" bindtap="gotoTab"></view>
   <view class="cashout icons entry" data-tabIndex="3" bindtap="gotoTab"></view>
   <view class="completed icons entry" data-tabIndex="2" bindtap="gotoTab"></view>
