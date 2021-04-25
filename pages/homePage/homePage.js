@@ -17,7 +17,7 @@ Page({
     app.getPoints();
 
     this.setData({
-      nbTitle: 'HomePage',
+      nbTitle: 'OpinionWorld 集思网',
       nbLoading: true,
       nbFrontColor: '#ffffff',
       nbBackgroundColor: '#000000',

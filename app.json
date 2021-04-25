@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/homePage/homePage",
     "pages/login/login",
     "pages/join/join",
-    "pages/homePage/homePage",
     "pages/loading/loading",
     "pages/auth/auth",
     "pages/noNetwork/noNetwork",
@@ -13,11 +13,13 @@
     "pages/postPageCashout/postPageCashout",
     "pages/navigator/navigator" 
    ],
-  "window": {
+   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#256baf",
+    "backgroundColor": "#256baf",
+    "navigationBarTitleText": "OpinionWorld 集思网",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "position": "bottom",

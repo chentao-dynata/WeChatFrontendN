@@ -1,7 +1,7 @@
-<page-meta>
-  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}"
+<!-- <page-meta>
+  <navigation-bar title="{{nbTitle}}" front-color="{{nbFrontColor}}"
     background-color="{{nbBackgroundColor}}" color-animation-duration="2000" color-animation-timing-func="easeIn" />
-</page-meta>
+</page-meta> -->
 
 <self-info></self-info>
 <view class="take_survey dashboardpig">
