@@ -3,7 +3,7 @@
   <navigation-bar title="Join Prepage" />
 </page-meta>
 <page-header></page-header>
-<view class="caption">
+<view class="caption questionfieldspig">
   <label class="title">Please fill in the below information.</label>
   <label class="content">More surveys will be assigned by filling in the info below. Meaning more chance to earn points!
   </label>
